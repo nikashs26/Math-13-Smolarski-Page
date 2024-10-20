@@ -6,10 +6,14 @@ What this project is:
 
 This project involves recreating SCU professor Dennis Smolarski's Math 13 class page using CSS and JavaScript. The redesigned version has a modernized interface with enhanced functionality, additional features, and a visually appealing aesthetic, making it more user-friendly and engaging for students.
 
+Notes: All working together on Nav and Search.
+
 Home Page (Nikash):
     Functionalities: 
         - nav bar with links to every other page (buttons: Home, Class Content, Relevant Links, About Smolarski)
         - Search bar (search across website) within nav bar
+    Extra:
+        - Will have a large image similar to the scu website videos
 
 Class Content (Jemian):
     Functionalities: 
