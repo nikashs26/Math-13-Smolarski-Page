@@ -49,3 +49,11 @@ section {
     background-color: lightgray;
     padding:1rem;
 }
+
+footer {
+    background-color: #a6192e;
+}
+
+footer p {
+    color:white;
+}
