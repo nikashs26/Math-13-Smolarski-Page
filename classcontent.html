@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheets" href="classcontent.css">
+    <link rel="stylesheet" href="stylesheets/classcontent.css">
 </head>
 
 <body>
     <nav>
-        <ul>HOME</ul>
-        <ul>COURSE CONTENT</ul>
-        <ul>ABOUT</ul>
-        <input />
+        <header>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#course-content">COURSE CONTENT</a></li>
+                    <li><a href="#about">ABOUT PROFESSOR SMOLARSKI</a></li>
+                </ul>
+            </nav>
+            <form role="search" aria-label="Search site">
+                <input type="search" name="q" placeholder="Search" aria-label="Search">
+                <button type="submit">🔍</button>
+            </form>
+        </header>
     </nav>
     <header>
         <title>
