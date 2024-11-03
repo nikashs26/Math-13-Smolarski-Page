@@ -1,1 +1,51 @@
-/* Font setting in CSS (use for all text): font-family: 'Inter', sans-serif; */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* NAV STYLES  */
+header {
+    background-color: #a6192e;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input[type="search"] {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 4px;
+}
+
+header form button {
+    background-color: #f8f8f8;
+    color: #a6192e;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+/* NAV STYLES END */
