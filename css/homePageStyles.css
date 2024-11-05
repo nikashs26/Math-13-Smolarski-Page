@@ -38,8 +38,8 @@ h2
 
 #Access, #Copy {
     font-family: 'Inter', sans-serif;
-    margin: 0 auto; /* Centering */
-    width: 95%; /* You can adjust width as needed */
+    margin: 0 auto;
+    width: 95%;
 }
 /*BG content box*/
 #rectangle 
