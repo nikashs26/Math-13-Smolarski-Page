@@ -81,6 +81,13 @@ details[open]>summary:first-of-type {
     border-bottom: none;
 }
 
+details[open]>summary:first-of-type:hover {
+    color: yellow;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
 article {
     /* background-color: chartreuse; */
     margin-top: 0;
