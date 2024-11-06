@@ -82,7 +82,7 @@ details[open]>summary:first-of-type {
 }
 
 details[open]>summary:first-of-type:hover {
-    color: FFFF3D;
+    color: #FFFF3D;
     /*slightly more contrast than default yellow*/
     border-left: 2px solid black;
     border-bottom: 2px solid black;
