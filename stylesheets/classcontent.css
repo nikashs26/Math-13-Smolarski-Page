@@ -92,7 +92,7 @@ details[open]>summary:first-of-type:hover {
 
 summary::marker {
     transform: rotate(45deg);
-    color: aqua;
+    /* color: aqua; */
 }
 
 details[open]>summary:first-of-type:hover>summary::marker:hover {
