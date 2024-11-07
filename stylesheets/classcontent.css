@@ -72,6 +72,7 @@ summary {
 
 summary:hover {
     background-color: palevioletred;
+    border-left: 4px solid black;
 }
 
 details[open]>summary:first-of-type {
@@ -84,13 +85,23 @@ details[open]>summary:first-of-type {
 details[open]>summary:first-of-type:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
-    border-left: 2px solid black;
+    border-left: 4px solid black;
     border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
+}
+
+summary::marker {
+    transform: rotate(45deg);
+    color: aqua;
+}
+
+details[open]>summary:first-of-type:hover>summary::marker:hover {
+    color: aqua;
 }
 
 article {
     /* background-color: chartreuse; */
+    /* Any background colors within the actual article tag will prevent the box shadows from working properly... */
     margin-top: 0;
     padding: 1rem;
     border-left: 2px solid black;
