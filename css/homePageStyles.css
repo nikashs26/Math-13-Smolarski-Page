@@ -43,8 +43,8 @@ h2
 #Access, #Copy 
 {
     font-family: 'Inter', sans-serif;
-    flex-wrap: wrap;
-    white-space: inherit;
+    margin: 0 auto; /* Centering */
+    width: 95%; /* You can adjust width as needed */
 }
 /*BG content boxes*/
 #rectangle 
@@ -275,3 +275,6 @@ footer p {
     
 }
 
+.footer-logo {
+    width: 80px;
+}
