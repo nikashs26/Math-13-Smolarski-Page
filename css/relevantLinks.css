@@ -1,7 +1,7 @@
+/* font pack for website */
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; 
 }
-
 
 /* NAV STYLES  */
 header {
@@ -48,4 +48,5 @@ header form button {
     border-radius: 4px;
     margin-left: 0.5rem;
 }
-/* NAV STYLES END */
+
+
