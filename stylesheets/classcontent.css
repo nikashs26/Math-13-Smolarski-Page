@@ -90,14 +90,17 @@ details[open]>summary:first-of-type:hover {
     /* border-right: 2px solid black; */
 }
 
-summary::marker {
-    transform: rotate(45deg);
-    /* color: aqua; */
+summary {
+    /* transform: rotate(45deg); */
+    list-style-image: url(../assets/icons/expand-arrow2.svg);
+    /* background-size: 16px 32px; */
 }
 
-details[open]>summary:first-of-type:hover>summary::marker:hover {
+
+
+/* details[open]>summary:first-of-type:hover>summary::marker:hover {
     color: aqua;
-}
+} */
 
 article {
     /* background-color: chartreuse; */
