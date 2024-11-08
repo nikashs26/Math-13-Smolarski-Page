@@ -85,7 +85,7 @@ summary::marker {
 
 summary:hover {
     background-color: palevioletred;
-    border-left: 4px solid black;
+    /* border-left: 4px solid black; */
 }
 
 details[open]>summary {
@@ -108,8 +108,7 @@ details>summary:hover {
 details[open]>summary:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
-    border-left: 4px solid black;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     /* border-right: 2px solid black; */
 }
 
