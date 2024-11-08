@@ -1,5 +1,9 @@
 /* Navigation */
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 header {
     background-color: #a6192e;
     color: #fff;
@@ -63,11 +67,20 @@ footer p {
     flex-direction: row;
 }
 
+/* 
+https://www.sitepoint.com/style-html-details-element/
+ */
 summary {
     background-color: white;
     margin-bottom: 0;
     padding: 1rem;
     border-bottom: 1px solid gray;
+
+    list-style-image: url(../assets/icons/expand-arrow.svg);
+}
+
+summary::marker {
+    /* font-size: 1.5em; */
 }
 
 summary:hover {
@@ -75,14 +88,24 @@ summary:hover {
     border-left: 4px solid black;
 }
 
-details[open]>summary:first-of-type {
+details[open]>summary {
     background-color: #a6192e;
     color: white;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
+    list-style-image: url(../assets/icons/expand-arrow-down.svg) !important;
 }
 
-details[open]>summary:first-of-type:hover {
+details[open]>summary::before {
+    transform: rotate(90deg);
+}
+
+details>summary:hover {
+    /* transition-duration: 100ms; */
+    list-style-image: url(../assets/icons/expand-arrow-45deg.svg);
+}
+
+details[open]>summary:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
     border-left: 4px solid black;
@@ -90,17 +113,10 @@ details[open]>summary:first-of-type:hover {
     /* border-right: 2px solid black; */
 }
 
-summary {
-    /* transform: rotate(45deg); */
-    list-style-image: url(../assets/icons/expand-arrow2.svg);
-    /* background-size: 16px 32px; */
+details[open]>summary:marker {
+    transform: rotate(90deg);
+    transition: 300ms;
 }
-
-
-
-/* details[open]>summary:first-of-type:hover>summary::marker:hover {
-    color: aqua;
-} */
 
 article {
     /* background-color: chartreuse; */
