@@ -43,8 +43,8 @@ h2
 #Access, #Copy 
 {
     font-family: 'Inter', sans-serif;
-    margin: 0 auto; /* Centering */
-    width: 95%; /* You can adjust width as needed */
+    
+    width: 95%;
 }
 /*BG content boxes*/
 #rectangle 
@@ -103,11 +103,11 @@ h2
 
 @media (max-width: 65rem) {
     #Copy {
-        margin-top: .2rem; 
+        margin-top: -.2rem; 
     }
 
     .textbook-info {
-        margin-top: 1rem; 
+        margin-top: 4.3rem; 
     }
     #rectangle 
     {
