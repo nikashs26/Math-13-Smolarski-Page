@@ -62,10 +62,10 @@ footer p {
     color: white;
 }
 
-.content-titles {
+/* .content-titles {
     display: flex;
     flex-direction: row;
-}
+} */
 
 /* 
 https://www.sitepoint.com/style-html-details-element/
@@ -135,4 +135,14 @@ article {
 
 summary h2 {
     display: inline;
+}
+
+.double-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.double-column ul {
+    /* display: ; */
 }
