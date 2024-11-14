@@ -5,8 +5,7 @@
 
 /* Main content starts below the header and background */
 main {
-
-    margin-top: 26vh; /* Pushes main content below the header and background image */
+    margin-top: calc(26vh + 50px); /*  content starts below header, adjusting for header height */
     padding: 1rem;
 }
 
@@ -31,6 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 
@@ -48,9 +48,13 @@ header nav ul {
     display: flex;
 }
 
-header nav ul li {
-    margin-right: 0.4rem;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 header nav ul li a {
     color: #fff;
@@ -90,13 +94,15 @@ header form button {
 footer {
     background-color: #a6192e;
     color: #fff;
-    padding: 1rem;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 0.9rem;
     width: 100%;
+    flex-wrap: wrap; 
 }
+
 
 .footer-text {
     text-align: left; 
