@@ -19,6 +19,13 @@ main h1{
     text-align: center;
     color: #a6192e;
 }
+section.web-links, 
+section.web-links h1, 
+section.web-links p {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
 
 
 header h1{
