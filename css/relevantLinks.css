@@ -9,7 +9,7 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%); /* Center the header horizontally */
-    width: 50%; /* Adjust width as needed */
+    width: 80%; 
     background-color: #a6192e;
     color: #fff;
     padding: 0.5rem;
@@ -24,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* or use a fixed height if needed */
+    height: 30%;
     z-index: -1;
 }
 
@@ -78,7 +78,7 @@ header form button {
 
 
 
-
+/* footer styles */
 footer {
     background-color: #a6192e;
     color: #fff;
