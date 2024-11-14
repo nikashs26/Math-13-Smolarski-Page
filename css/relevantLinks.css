@@ -3,16 +3,29 @@
     font-family: 'Inter', sans-serif; 
 }
 
+/* Center the header horizontally and place it on top */
 header {
-    
-    width:98.9%;
-    font-family: 'Inter', sans-serif; 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the header horizontally */
+    width: 50%; /* Adjust width as needed */
     background-color: #a6192e;
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Ensure nav-background covers full width and stays behind header */
+.nav-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* or use a fixed height if needed */
+    z-index: -1;
 }
 
 header nav ul {
@@ -21,13 +34,12 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-right: .4rem;
+    margin-right: 0.4rem;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    
 }
 
 header form {
@@ -38,12 +50,10 @@ header form {
 header form input[type="search"] {
     padding: 0.4rem;
     border: none;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
-header form button
-{
-    
+header form button {
     background-color: #f8f8f8;
     color: #a6192e;
     border: none;
@@ -53,14 +63,16 @@ header form button
     margin-left: 0.5rem;
 }
 
-.nav-background
-{
-    margin-top:-1rem;
-    position:absolute;
-    width:100%;
-    height:auto;
-    z-index: -3;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
