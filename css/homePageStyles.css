@@ -1,10 +1,12 @@
 
+
+
 /*fall quarter specifically*/
 #main-heading {
     color: #b30738;
-    margin-top: 12rem;
+    margin-top: 8rem;
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 /*any header 2*/
@@ -13,11 +15,20 @@ h2
     
     color: #b30738;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-top: 2rem;
 
 }
+#math13-header
+{
+    margin-top: 4rem;
+    color:white;
+    font-size: 30px;
+}
+
+
+
 /*info text left*/
 #Access {
     text-align: left;
@@ -43,15 +54,15 @@ h2
 #Access, #Copy 
 {
     font-family: 'Inter', sans-serif;
-    margin: 0 auto; /* Centering */
-    width: 95%; /* You can adjust width as needed */
+    
+    width: 95%;
 }
-/*BG content boxes*/
+/*rectangles and dividers*/
 #rectangle 
 {
     position: absolute;
     top: 20rem; 
-    
+    margin-top:2.2rem;
     width: 100%; 
     height: 10rem; 
     background-color: #F4F2F0; 
@@ -59,21 +70,44 @@ h2
 }
 #rectangle2 
 {
+    
     position: absolute;
-    margin-top: -10rem;
+    margin-top: -12rem;
     width: 100%; 
     height: 40rem; 
     background-color: white; 
-    z-index: -2;
+    z-index: -3;
 }
 #rectangle3 
 {
     position: absolute;
-    margin-top: -1rem;
+    margin-top: -9rem;
     width: 100%; 
-    height: 8rem; 
+    height: 12rem; 
     background-color: #F4F2F0; 
     z-index: -1;
+}
+
+
+#line-divider-1 {
+    
+    margin-left:4rem;
+    width: .08%; 
+    height: 40rem; 
+    background-color: lightgray;
+    
+}
+
+#line-divider-2
+{
+    
+    
+    
+
+    width: .08%; 
+    height: 40rem; 
+    background-color: lightgray;
+    align-items: right;
 }
 
 
@@ -94,27 +128,39 @@ h2
     cursor: pointer;
     outline: none;
     text-decoration: none;
+    
 }
 
 .textbook-info:hover
 {
     background-color: #a3062f;
+    
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 65rem) 
+{
     #Copy {
-        margin-top: .2rem; 
+        margin-top: -.2rem; 
     }
 
     .textbook-info {
-        margin-top: 1rem; 
+        margin-top: .2rem; 
     }
     #rectangle 
     {
+        height: 15rem; 
+        top: 22.2rem;
+    }
+}
+@media (max-width: 65rem) 
+{
+    
+    #rectangle2
+    {
         height: 12rem; 
-        top: 20rem;
+        top: 30rem;
     }
-    }
+}
 
 .course-content
 {
@@ -129,8 +175,13 @@ h2
     border: none;
     cursor: pointer;
     outline: none;
+    
 }
 
+#Class-Content-Section
+{
+    margin-top:10rem;
+}
 /*pdf images*/
 
 #handouts
@@ -200,14 +251,64 @@ header form button
 
 
 
+#relevant-web-links-article
+{
+    
+    
+    margin-right:2rem;
+    font-weight: 200;
+    position: relative;
+    
+    max-width:25rem;
+    
+
+}
+
+#relevant-web-links-article, #miscellaneous-article {
+    flex: 1; 
+    min-width: 16rem; 
+    max-width: 40%;  
+    text-align: center;
+}
+
+
+
+
+#miscellaneous-article {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+
+
+
+.relevant-links-paragraph
+{
+    min-width: 14rem;
+    margin-top:2rem;
+    margin-left:3rem;
+    margin-right:3rem;
+}
+#miscellaneous-article
+{
+    position: relative;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    
+    font-weight: 200;
+    
+    max-width: 30rem;
+}
+
+
+
 #handout-links-and-images
 {
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-
 
 }
 
@@ -223,33 +324,116 @@ body section div
     
 }
 
-
+body section a
+{
+    text-decoration: none;
+}
 
 body section div article img
 {
     margin-top: 3rem;
-    
+    min-width: 12rem;
     align-content: center;
     width: 30rem;
     height: auto;
     max-width: 33%;
 }
-
+.tenam-reg
+{
+    height:13.8rem;
+}
 #CC
 {
     margin-top: 10rem;
 }
 #second-list
 {
-    margin-right:10rem;
-    margin-left: 10rem;
+    
+    margin-top:10rem;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: left;
-
+    
 }
 
+
+summary
+{
+    background-color: white;
+    margin-bottom: 0;
+    padding: 1rem;
+
+    width: 20rem;
+    
+}
+
+summary, #second-list ul li
+{
+    margin-left:0rem;
+}
+body section ul li
+{
+    
+    list-style-type: none;
+}
+
+summary:hover 
+{
+    width:100%;
+    background-color: palevioletred;
+}
+
+details[open]>summary
+{
+    background-color: #a6192e;
+    color: white;
+    width:100%;
+    box-shadow: 0 1rem 1rem -15px black;
+    border-bottom: none;
+    
+}
+
+
+
+details[open]
+{
+    background-color: rgb(247, 242, 242);
+}
+
+
+
+
+
+.assessment-link
+{
+    color:blue;
+    margin-top: 1.3rem;
+    margin-left:-1.9rem;
+    margin-bottom:1rem;
+}
+#second-list ul li
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    padding: 1rem;
+    border-bottom: 2px solid lightgray;
+    
+    box-shadow: inset 0 -0.25rem 2rem -15px white;
+    
+    margin-top:-.1rem;
+}
+
+#second-list p
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+}
+
+body section ul li summary
+{
+    margin-left: -1rem;
+}
 
 footer {
     background-color: #a6192e;
@@ -262,7 +446,7 @@ footer {
     font-size: 0.9rem;
     position: relative;
     margin-top: auto;
-    width: 100%;
+    width: 99.1%;
 }
 
 footer p {
