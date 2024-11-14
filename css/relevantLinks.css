@@ -5,11 +5,20 @@
 
 /* Main content starts below the header and background */
 main {
-    margin-top: 35vh; /* Pushes main content below the header and background image */
+
+    margin-top: 26vh; /* Pushes main content below the header and background image */
     padding: 1rem;
 }
 
+main h1{
+    text-align: center;
+    color: #a6192e;
+}
 
+
+header h1{
+    color: #fff;
+}
 header {
     position: absolute;
     top: 0;
