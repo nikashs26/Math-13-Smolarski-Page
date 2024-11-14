@@ -251,58 +251,6 @@ header form button
 
 
 
-#relevant-web-links-article
-{
-    
-    
-    
-    font-weight: 200;
-
-    position: relative;
-    max-width: 40%;  
-    min-width:15rem;
-    
-
-}
-
-#relevant-web-links-article, #miscellaneous-article {
-    flex: 1; 
-    min-width: 16rem; 
-    
-    
-}
-
-
-
-
-#miscellaneous-article {
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    
-    min-width: 50%;
-}
-
-
-
-
-.relevant-links-paragraph
-{
-    min-width: 14rem;
-    margin-top:2rem;
-    margin-left:3rem;
-    margin-right:3rem;
-}
-#miscellaneous-article
-{
-    position: relative;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    
-    font-weight: 200;
-    
-    max-width: 30rem;
-}
 
 
 
@@ -430,6 +378,71 @@ details[open]
 {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
+}
+
+#relevant-web-links-article
+{
+    
+    
+    
+    font-weight: 200;
+
+    position: relative;
+    max-width: 40%;  
+    min-width:15rem;
+    
+
+}
+
+#relevant-web-links-article, #miscellaneous-article {
+    flex: 1; 
+    min-width: 16rem; 
+    
+    
+}
+
+
+
+
+#miscellaneous-article {
+    position: relative;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-right: 2rem;
+    font-weight: 200;
+    
+    max-width: 30rem;
+
+    
+    min-width: 50%;
+}
+
+.miscellanoeus-title
+{
+    margin-left:2rem;
+}
+
+
+
+
+.relevant-links-paragraph
+{
+    max-width: auto;
+    text-align: center;
+    min-width:9rem;
+    margin-top:2rem;
+    margin-left:3rem;
+    margin-right:3rem;
+}
+#miscellaneous-article
+{
+    position: relative;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin-right: 2rem;
+    font-weight: 200;
+    
+    max-width: 30rem;
 }
 
 body section ul li summary
