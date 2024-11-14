@@ -7,17 +7,17 @@
     <title>Web Links</title>
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#home">| HOME |</a> </li>
-                <li><a href="#course-content">| COURSE CONTENT |</a> </li>
-                <li><a href="#about"> |ABOUT PROFESSOR SMOLARSKI |</a> </li>
+                <li><a href="#home">|HOME|</a></li>
+                <li><a href="#course-content">|COURSE CONTENT|</a></li>
+                <li><a href="#about">|ABOUT PROFESSOR SMOLARSKI|</a></li>
             </ul>
         </nav>
         <form role="search" aria-label="Search site">
-            <input type="search" name="q" placeholder="Search" aria-label="Search">
-            <button type="submit">🔍</button>
+            <input type="search" name="q" placeholder="Search" aria-label="Search input">
+            <button type="submit" aria-label="Search button">🔍</button>
         </form>
     </header>
     
@@ -235,12 +235,15 @@
                 </article>
             </section>
     </main>
+
+
     <footer>
-        <hr>
+    <div class="footer-text">
         <p><em>This page is maintained by Dennis C. Smolarski, S.J.</em><br>
         Last updated 7 January 2024</p>
         <p>Email: dsmolarski at scu.edu</p>
-        <img src="assets/SCUlogo.png" alt="Santa Clara University Logo" class="footer-logo">
-    </footer>
-</body>
-</html>
+    </div>
+    <div class="footer-logo">
+        <img src="assets/SCUlogo.png" alt="Santa Clara University Logo">
+    </div>
+</footer>
