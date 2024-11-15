@@ -176,7 +176,7 @@ details > summary:hover {
 }
 
 details[open] > summary:hover {
-    color: #b9c1cf;
+    color: black;
 }
 
 details[open] > summary:marker {
