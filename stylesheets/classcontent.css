@@ -130,22 +130,29 @@ summary h2 {
 .double-column {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 #line-divider {
-    margin-left: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     width: .1%;
     height: auto;
     background-color: lightgray;
 }
 
 .double-column ul {
-    display: inline;
     max-width: 55rem;
     align-content: left;
 }
 
+.double-column h3 {
+    height: none;
+}
+
 h3 {
     display: block;
+    padding: 0;
+    margin: 0;
+    height: auto;
 }
