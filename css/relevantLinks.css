@@ -17,12 +17,12 @@ main {
 
 main h1{
     text-align: center;
-    color: #a6192e;
+    color: #b30738;
 }
 section.web-links, 
 section.web-links h1, 
 section.web-links p {
-    background-color: lightgray;
+    background-color: #eaeff8;
     padding: 1rem;
 }
 
@@ -95,27 +95,13 @@ header form input[type="search"] {
 
 header form button {
     background-color: #f8f8f8;
-    color: #a6192e;
+    color: #b30738;
     border: none;
     cursor: pointer;
     padding: 0.4rem;
     border-radius: 4px;
     margin-left: 0.5rem;
 }
-
-/* Footer styles */
-footer {
-    background-color: #a6192e;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
-    width: 100%;
-    flex-wrap: wrap; 
-}
-
 
 /* Footer styles */
 footer {
@@ -190,7 +176,7 @@ details > summary:hover {
 }
 
 details[open] > summary:hover {
-    color: #FFFF3D;
+    color: #b9c1cf;
 }
 
 details[open] > summary:marker {
@@ -209,11 +195,11 @@ article {
 }
 
 .entire-accordion {
-    background-color: beige;
+    background-color: #eaeff8;
 }
 
 .entire-accordion {
-    background-color: beige;
+    background-color: #eaeff8;
 }
 
 .double-column {
