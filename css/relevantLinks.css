@@ -56,7 +56,7 @@ main h1{
 section.web-links, 
 section.web-links h1, 
 section.web-links p {
-    background-color: #eaeff8;
+    background-color: #F4F2F0;
     padding: 1rem;
 }
 
@@ -220,11 +220,7 @@ article {
 }
 
 .entire-accordion {
-    background-color: #eaeff8;
-}
-
-.entire-accordion {
-    background-color: #eaeff8;
+    background-color: #F4F2F0;
 }
 
 .double-column {
