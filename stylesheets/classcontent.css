@@ -141,5 +141,11 @@ summary h2 {
 }
 
 .double-column ul {
-    /* display: ; */
+    display: inline;
+    max-width: 55rem;
+    align-content: left;
+}
+
+h3 {
+    display: block;
 }
