@@ -142,7 +142,6 @@ summary h2 {
 }
 
 .double-column ul {
-    max-width: 55rem;
     align-content: left;
 }
 
@@ -150,9 +149,10 @@ summary h2 {
     height: none;
 }
 
-h3 {
+.column-container h3 {
     display: block;
     padding: 0;
     margin: 0;
     height: auto;
+    text-align: center;
 }
