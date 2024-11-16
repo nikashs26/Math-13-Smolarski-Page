@@ -200,22 +200,26 @@ footer p {
 .popup-info {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
     color: white;
     padding: 10px;
     border-radius: 4px;
     font-size: 14px;
-    max-width: 100%; /* Increased max width for text and images */
-    max-height: 100%;
-    z-index: 1000;
+    max-width: 250px; /* Control the width */
+    word-wrap: break-word; /* Ensure text wraps to the next line when necessary */
+    white-space: normal; /* Allow text to wrap onto new lines */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    height: auto; /* Allow the height to grow dynamically */
+    line-height: 1.4; /* Improve text readability */
+    overflow: visible; /* Let the text inside flow out if necessary */
 }
 
+/* Optional: For adding image responsiveness inside the popup */
 .popup-info img {
-    width: 100%;
-    height: 100%;
-    margin-top: 5px;
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Match the rounded corners of the popup */
+    margin-top: 10px; /* Add space between image and text */
 }
 
-[data-info]:hover + .popup-info {
-    display: block;
-}

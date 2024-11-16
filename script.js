@@ -23,10 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Position the popup when hovering over the element
         element.addEventListener("mouseenter", (event) => {
             const rect = element.getBoundingClientRect();
-            const popupWidth = popup.offsetWidth;
-            const popupHeight = popup.offsetHeight;
+            const popupWidth = popup.offsetWidth || 200; // Fallback width for initial render
+            const popupHeight = popup.offsetHeight || 100; // Fallback height for initial render
 
-            // Position the popup slightly above or below the element
             popup.style.left = `${rect.left + window.scrollX + (rect.width / 2) - (popupWidth / 2)}px`;
             popup.style.top = `${rect.top + window.scrollY - popupHeight - 10}px`;
 
