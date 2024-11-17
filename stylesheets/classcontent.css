@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 header {
@@ -49,7 +51,7 @@ header form button {
     margin-left: 0.5rem;
 }
 
-section {
+body>section {
     background-color: lightgray;
     padding: 1rem;
 }
@@ -62,14 +64,6 @@ footer p {
     color: white;
 }
 
-/* .content-titles {
-    display: flex;
-    flex-direction: row;
-} */
-
-/* 
-https://www.sitepoint.com/style-html-details-element/
- */
 summary {
     background-color: white;
     margin-bottom: 0;
@@ -118,8 +112,6 @@ details[open]>summary:marker {
 }
 
 article {
-    /* background-color: chartreuse; */
-    /* Any background colors within the actual article tag will prevent the box shadows from working properly... */
     margin-top: 0;
     padding: 1rem;
     border-left: 2px solid black;
@@ -139,10 +131,47 @@ summary h2 {
 
 .double-column {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+#line-divider {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: .1%;
+    height: auto;
+    background-color: lightgray;
 }
 
 .double-column ul {
-    /* display: ; */
+    align-content: left;
+}
+
+.double-column h3 {
+    height: 0;
+    display: block;
+}
+
+.hw-column h3,
+.notes-column h3 {
+    /* display: block; */
+    padding: 0;
+    margin: 0;
+    height: auto;
+    /* text-align: center; */
+    /*professor says this is bad because of cognitive dissonance*/
+}
+
+.hw-column {
+    flex-wrap: wrap;
+}
+
+.notes-column {
+    min-width: 16rem;
+}
+
+.hw-column ul li {
+    /* display: inline-block; */
+    min-width: 30rem;
+    max-width: 64rem;
 }
