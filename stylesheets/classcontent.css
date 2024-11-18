@@ -73,7 +73,7 @@ ul button {
 
 #expandall-toggler {
     /* EXPAND ALL */
-    border-image: url(../assets/icons/Plus_Border_Outward.png) 20 round;
+    border-image: url(../assets/icons/Plus_Border_Expand.png) 20 round;
     border-width: 12px;
     border-style: dashed;
 }
