@@ -71,15 +71,11 @@ summary {
     border-bottom: 1px solid gray;
 
     list-style-image: url(../assets/icons/expand-arrow.svg);
-}
-
-summary::marker {
-    /* font-size: 1.5em; */
+    list-style: none;
 }
 
 summary:hover {
     background-color: palevioletred;
-    /* border-left: 4px solid black; */
 }
 
 details[open]>summary {
@@ -90,9 +86,9 @@ details[open]>summary {
     list-style-image: url(../assets/icons/expand-arrow-down.svg) !important;
 }
 
-details[open]>summary::before {
+/* details[open]>summary::before {
     transform: rotate(90deg);
-}
+} */
 
 details>summary:hover {
     /* transition-duration: 100ms; */
@@ -125,9 +121,7 @@ article {
 
 }
 
-summary h2 {
-    display: inline;
-}
+
 
 .double-column {
     display: flex;
@@ -171,7 +165,56 @@ summary h2 {
 }
 
 .hw-column ul li {
-    /* display: inline-block; */
     min-width: 30rem;
     max-width: 64rem;
+}
+
+summary h2 {
+    display: inline;
+    margin-left: 2.2rem;
+}
+
+
+
+/* SUPER SEXY PLUS AND MINUS SYMBOLS!!! */
+.vert-line,
+.horiz-line {
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    height: 0.25rem;
+    background: #000;
+    /* content: ""; */
+    margin-top: 0.9rem;
+    transition: .3s;
+}
+
+.vert-line {
+    rotate: 90deg;
+    /* background: chartreuse; */
+}
+
+details[open]>summary>.vert-line {
+    rotate: 180deg;
+    transform: translate(0, 0);
+}
+
+details[open]>summary>.horiz-line {
+    rotate: 180deg;
+}
+
+details>summary:hover>.vert-line {
+    transform: translateX(0.25rem);
+}
+
+details[open]>summary:hover>.vert-line {
+    transform: translateX(0);
+}
+
+details>summary:hover>.horiz-line {
+    transform: translateY(0.25rem);
+}
+
+details[open]>summary:hover>.horiz-line {
+    transform: translateY(0);
 }
