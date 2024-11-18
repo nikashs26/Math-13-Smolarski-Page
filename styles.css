@@ -223,3 +223,8 @@ footer p {
     margin-top: 10px; /* Add space between image and text */
 }
 
+hr {
+    border: 0;  /* Remove default border */
+    height: 2px;  /* Adjust thickness here */
+    background-color: grey;  /* Change color if needed */
+}
