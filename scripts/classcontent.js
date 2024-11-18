@@ -1,26 +1,27 @@
 const detailArray = document.getElementsByTagName("details");
+const expandAllButton = document.getElementById("expandall-toggler");
+let i = 0;
+let numTimesExpandToggleClicked = 0;
 function toggleExpandAllAccordions() {
-    // array1.forEach((element) => console.log(element));
-    let i = 0;
-
-    // detailArray.forEach(details => {
-    //     if (details.open) {
-    //         details.open = false;
-    //     }
-    // });
-
     for (i = 0; i < detailArray.length; i++) {
-        if (detailArray[i].open) {
+        if (numTimesExpandToggleClicked % 2 == 0) {
+            expandAllAccordions();
+        } else {
             closeAllAccordions();
-            return;
         }
-        detailArray[i].open = true;
     }
-
+    numTimesExpandToggleClicked++;
 }
 
 function closeAllAccordions() {
-    for (let i = 0; i < detailArray.length; i++) {
+    for (i = 0; i < detailArray.length; i++) {
         detailArray[i].open = false;
     }
+    expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/icons/Plus_Border_Outward.png) 20 round";
+}
+function expandAllAccordions() {
+    for (i = 0; i < detailArray.length; i++) {
+        detailArray[i].open = true;
+    }
+    expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/icons/Minus_Border_Inward.png) 20 round";
 }

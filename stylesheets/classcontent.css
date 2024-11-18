@@ -64,13 +64,29 @@ footer p {
     color: white;
 }
 
+/* buttons */
+ul button {
+    padding: 0.8rem;
+    transition: .1s;
+
+}
+
+#expandall-toggler {
+    /* EXPAND ALL */
+    border-image: url(../assets/icons/Plus_Border_Outward.png) 20 round;
+    border-width: 12px;
+    border-style: dashed;
+}
+
+#expand-all-toggler:hover {
+    background: #a6192e;
+}
+
 summary {
     background-color: white;
     margin-bottom: 0;
     padding: 1rem;
     border-bottom: 1px solid gray;
-
-    list-style-image: url(../assets/icons/expand-arrow.svg);
     list-style: none;
 }
 
@@ -83,23 +99,11 @@ details[open]>summary {
     color: white;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
-    list-style-image: url(../assets/icons/expand-arrow-down.svg) !important;
-}
-
-/* details[open]>summary::before {
-    transform: rotate(90deg);
-} */
-
-details>summary:hover {
-    /* transition-duration: 100ms; */
-    list-style-image: url(../assets/icons/expand-arrow-45deg.svg);
 }
 
 details[open]>summary:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
-    /* border-bottom: 2px solid black; */
-    /* border-right: 2px solid black; */
 }
 
 details[open]>summary:marker {
@@ -118,7 +122,6 @@ article {
 
 .entire-accordion {
     background-color: beige;
-
 }
 
 
@@ -196,11 +199,12 @@ summary h2 {
 
 details[open]>summary>.vert-line {
     rotate: 180deg;
-    transform: translate(0, 0);
+    background: white;
 }
 
 details[open]>summary>.horiz-line {
     rotate: 180deg;
+    background: white;
 }
 
 details>summary:hover>.vert-line {

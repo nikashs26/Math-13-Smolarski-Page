@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheets/classcontent.css">
-    <script src="scripts\classcontent.js"></script>
+    <script defer src="scripts\classcontent.js"></script>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
         Last updated: [INSERT AUTOMATICALLY UPDATED DATE AND TIME HERE]
     </h3>
     <ul>
-        <button onclick="toggleExpandAllAccordions()">EXPAND/COLLAPSE ALL</button>
+        <button id="expandall-toggler" onclick="toggleExpandAllAccordions()">EXPAND/COLLAPSE ALL</button>
         <button>SHOW/HIDE PREVIOUS WEEKS</button>
     </ul>
     <div class="entire-accordion">
@@ -227,7 +227,6 @@
                 <ul>
                     <li>Wed, Oct 23 Review Session for Midterm II, 7:30-8:30pm, Place DS 206.</li>
                     <li>Fri, Oct 25 Midterm II</li>
-                    <li>Date 3</li>
                 </ul>
             </article>
         </details>
