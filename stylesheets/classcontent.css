@@ -179,30 +179,6 @@ summary:hover {
     }
 }
 
-/* start of transitions PASTED HERE AS WELL BECAUSE EMULATOR FAILS ON BOTH CHROME AND FIREFOX */
-/* summary:hover {
-    background-color: palevioletred;
-    transition: .1s;
-}
-
-summary:not(hover) {
-    transition: .1s;
-}
-
-.vert-line,
-.horiz-line {
-    transition: .3s;
-}
-
-.checkbox-container input~.eye,
-.checkbox-container input~.eyeslash {
-    transition: 0.2s;
-}
-
-ul button {
-    transition: .1s;
-} */
-
 /* End of transitions */
 
 details[open]>summary {
@@ -289,7 +265,7 @@ details summary h2 {
 
 
 
-/* SUPER SEXY PLUS AND MINUS SYMBOLS!!! */
+/* PLUS AND MINUS SYMBOLS!!! */
 .vert-line,
 .horiz-line {
     display: block;
