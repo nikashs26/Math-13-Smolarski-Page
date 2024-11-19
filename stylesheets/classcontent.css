@@ -53,11 +53,7 @@ header form button {
 
 /* Hide default checkbox */
 label input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+    display: none;
 }
 
 .checkbox-container input~.eye,
@@ -65,32 +61,49 @@ label input[type="checkbox"] {
     position: absolute;
     transition: 0.3s;
     cursor: pointer;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 9.5rem;
+    border: solid black 1px;
+}
+
+.checkbox-container {
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    vertical-align: sub;
+}
+
+.checkbox-container:hover {
+    background-color: #e7e7e7;
 }
 
 .checkbox-container label {
-    margin-left: 2.1rem;
+    margin-left: 2.5rem;
     vertical-align: middle;
     /* position: relative; */
 }
 
 /* Unchecked behavior (user cannot see previous weeks) */
 .checkbox-container input~.eyeslash {
-    opacity: 0;
+    opacity: 1;
 }
 
 .checkbox-container input~.eye {
-    opacity: 1;
+    opacity: 0;
 }
 
 
 /* Checked behavior (user can see previous weeks) */
 .checkbox-container input:checked~.eyeslash {
-    opacity: 1;
-    display: block;
+    opacity: 0;
 }
 
 .checkbox-container input:checked~.eye {
-    opacity: 0;
+
+    opacity: 1;
+    display: block;
 }
 
 /* .checkbox-container input~.eyeslash {
@@ -128,6 +141,7 @@ ul button {
 
 ul button:hover {
     background-color: #e7e7e7;
+
 }
 
 summary {
