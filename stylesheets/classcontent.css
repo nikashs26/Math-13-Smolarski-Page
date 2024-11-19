@@ -59,7 +59,6 @@ label input[type="checkbox"] {
 .checkbox-container input~.eye,
 .checkbox-container input~.eyeslash {
     position: absolute;
-    transition: 0.3s;
     cursor: pointer;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -94,7 +93,6 @@ label input[type="checkbox"] {
     opacity: 0;
 }
 
-
 /* Checked behavior (user can see previous weeks) */
 .checkbox-container input:checked~.eyeslash {
     opacity: 0;
@@ -103,7 +101,7 @@ label input[type="checkbox"] {
 .checkbox-container input:checked~.eye {
 
     opacity: 1;
-    display: block;
+    display: unset;
 }
 
 /* .checkbox-container input~.eyeslash {
@@ -127,7 +125,6 @@ footer p {
 /* buttons */
 ul button {
     padding: 0.5rem;
-    transition: .1s;
     font-weight: bold;
 }
 
@@ -154,12 +151,35 @@ summary {
 
 summary:hover {
     background-color: palevioletred;
-    transition: .2s;
 }
 
-details {
-    transition: .1s;
+@media (prefers-reduced-motion: no-preference) {
+    summary:hover {
+        background-color: palevioletred;
+        transition: .1s;
+    }
+
+    summary:not(hover) {
+        transition: .1s;
+        /* This will give seizures when using the "collapse all" button. FIXED WITH A JS CONDITION. */
+    }
+
+    .vert-line,
+    .horiz-line {
+        transition: .3s;
+    }
+
+    .checkbox-container input~.eye,
+    .checkbox-container input~.eyeslash {
+        transition: 0.2s;
+    }
+
+    ul button {
+        transition: .1s;
+    }
 }
+
+
 
 details[open]>summary {
     background-color: #a6192e;
@@ -171,11 +191,6 @@ details[open]>summary {
 details[open]>summary:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
-}
-
-details[open]>summary:marker {
-    transform: rotate(90deg);
-    transition: 300ms;
 }
 
 article {
@@ -190,8 +205,6 @@ article {
 .entire-accordion {
     background-color: beige;
 }
-
-
 
 .double-column {
     display: flex;
@@ -236,7 +249,7 @@ article {
 
 .notes-column {
     min-width: 16rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .hw-column ul li {
@@ -262,7 +275,6 @@ details summary h2 {
     background: #000;
     /* content: ""; */
     margin-top: 0.9rem;
-    transition: .3s;
 }
 
 .vert-line {
@@ -294,4 +306,11 @@ details>summary:hover>.horiz-line {
 
 details[open]>summary:hover>.horiz-line {
     transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        transition: none;
+    }
 }
