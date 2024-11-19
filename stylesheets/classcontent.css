@@ -53,9 +53,49 @@ header form button {
 
 /* Hide default checkbox */
 label input[type="checkbox"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
+.checkbox-container input~.eye,
+.checkbox-container input~.eyeslash {
+    position: absolute;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    margin-left: 2.1rem;
+    vertical-align: middle;
+    /* position: relative; */
+}
+
+/* Unchecked behavior (user cannot see previous weeks) */
+.checkbox-container input~.eyeslash {
+    opacity: 0;
+}
+
+.checkbox-container input~.eye {
+    opacity: 1;
+}
+
+
+/* Checked behavior (user can see previous weeks) */
+.checkbox-container input:checked~.eyeslash {
+    opacity: 1;
+    display: block;
+}
+
+.checkbox-container input:checked~.eye {
+    opacity: 0;
+}
+
+/* .checkbox-container input~.eyeslash {
+    display: none;
+} */
 
 
 body>section {
@@ -190,9 +230,10 @@ article {
     max-width: 64rem;
 }
 
-summary h2 {
+details summary h2 {
     display: inline;
     margin-left: 2.2rem;
+    user-select: none;
 }
 
 
