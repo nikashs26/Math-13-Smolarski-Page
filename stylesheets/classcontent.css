@@ -180,7 +180,7 @@ summary:hover {
 }
 
 /* start of transitions PASTED HERE AS WELL BECAUSE EMULATOR FAILS ON BOTH CHROME AND FIREFOX */
-summary:hover {
+/* summary:hover {
     background-color: palevioletred;
     transition: .1s;
 }
@@ -201,7 +201,7 @@ summary:not(hover) {
 
 ul button {
     transition: .1s;
-}
+} */
 
 /* End of transitions */
 
