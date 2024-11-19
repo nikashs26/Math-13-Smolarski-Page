@@ -179,7 +179,31 @@ summary:hover {
     }
 }
 
+/* start of transitions PASTED HERE AS WELL BECAUSE EMULATOR FAILS ON BOTH CHROME AND FIREFOX */
+summary:hover {
+    background-color: palevioletred;
+    transition: .1s;
+}
 
+summary:not(hover) {
+    transition: .1s;
+}
+
+.vert-line,
+.horiz-line {
+    transition: .3s;
+}
+
+.checkbox-container input~.eye,
+.checkbox-container input~.eyeslash {
+    transition: 0.2s;
+}
+
+ul button {
+    transition: .1s;
+}
+
+/* End of transitions */
 
 details[open]>summary {
     background-color: #a6192e;
@@ -273,7 +297,6 @@ details summary h2 {
     width: 1.6rem;
     height: 0.25rem;
     background: #000;
-    /* content: ""; */
     margin-top: 0.9rem;
 }
 
