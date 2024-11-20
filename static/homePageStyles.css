@@ -324,6 +324,12 @@ header form button a:hover{
     justify-content: center;
 
 }
+
+#handout-links-and-images li a:hover
+{
+    background-color: lightblue;
+    
+}
 body
 {
     max-width: 95%;
@@ -482,6 +488,11 @@ details[open]
 
     
     min-width: 20%;
+}
+#miscellaneous-article a:hover
+{
+    background-color: lightblue;
+    
 }
 
 .miscellanoeus-title
