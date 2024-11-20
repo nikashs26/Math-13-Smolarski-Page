@@ -104,10 +104,6 @@ label input[type="checkbox"] {
     display: unset;
 }
 
-/* .checkbox-container input~.eyeslash {
-    display: none;
-} */
-
 
 body>section {
     background-color: lightgray;
@@ -155,23 +151,23 @@ summary:hover {
 
 @media (prefers-reduced-motion: no-preference) {
     summary:hover {
-        background-color: palevioletred;
         transition: .1s;
     }
 
     summary:not(hover) {
-        transition: .1s;
+        /* transition: .1s; */
         /* This will give seizures when using the "collapse all" button. FIXED WITH A JS CONDITION. */
     }
 
     .vert-line,
     .horiz-line {
         transition: .3s;
+        /* either .3 or .2s looks great */
     }
 
     .checkbox-container input~.eye,
     .checkbox-container input~.eyeslash {
-        transition: 0.2s;
+        transition: 0.1s;
     }
 
     ul button {

@@ -38,16 +38,11 @@ function toggleExpandAllAccordions() {
 
 function closeAllAccordions() {
     for (i = 0; i < detailArray.length; i++) {
-        summaryArray[i].style.transition = "none"; //seizure prevention in action
+        // summaryArray[i].style.transition = "none"; //seizure prevention in action
         detailArray[i].open = false;
     }
     expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Plus_Border_Expand3.png) 20 round";
     expandAllButton.innerHTML = 'EXPAND ALL';
-    if (query.matches) {
-        for (i = 0; i < detailArray.length; i++) {
-            summaryArray[i].style.transition = "0.1s"; //resetting "out" transition after everything collapses
-        }
-    }
     return;
 }
 function expandAllAccordions() {
