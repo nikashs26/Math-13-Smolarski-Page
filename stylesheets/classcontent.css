@@ -147,6 +147,7 @@ summary {
 
 summary:hover {
     background-color: palevioletred;
+    cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -172,6 +173,17 @@ summary:hover {
 
     ul button {
         transition: .1s;
+    }
+
+    @keyframes details-show {
+        from {
+            opacity: 0;
+            transform: translateY(-0.5em);
+        }
+    }
+
+    details[open]>article {
+        animation: details-show 150ms ease-in-out;
     }
 }
 
