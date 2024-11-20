@@ -90,7 +90,18 @@ header nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Search form */
+@media (max-width: 10rem) 
+{
+    header form
+    {
+        top:5rem;
+    
+
+    }
+    
+}
+
+
 header form {
     display: flex;
     align-items: center;
@@ -100,6 +111,8 @@ header form input[type="search"] {
     padding: 0.4rem;
     border: none;
     border-radius: 0.25rem;
+    height:2.2rem;
+    width:15rem;
 }
 
 header form button {
@@ -109,7 +122,12 @@ header form button {
     cursor: pointer;
     padding: 0.4rem;
     border-radius: 4px;
-    margin-left: 0.5rem;
+    margin-left: -1.8rem;
+    
+}
+header form button a:hover{
+    background-color: rgb(251, 22, 22);
+    
 }
 .nav-background
 {
@@ -136,6 +154,7 @@ header form button {
 /*info text right */
 #Copy
 {
+    margin-left:3rem;
     text-align: right;
     font-size:20px;
     margin-top:-4rem;
@@ -280,7 +299,11 @@ header form button {
     outline: none;
     text-decoration: none;
 }
-
+.course-content:hover
+{
+    background-color: #a3062f;
+    
+}
 #Class-Content-Section
 {
     margin-top:10rem;
