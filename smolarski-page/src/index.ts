@@ -21,20 +21,22 @@ app.use('/*', serveStatic({
 }));
 
 app.use('/*', serveStatic({ 
+  root: './static/borders'
+}));
+
+app.use('/*', serveStatic({ 
   root: './static/icons'
 }));
 
 app.use('/*', serveStatic({ 
-  root: './static/screenshots'
-}));
-
-app.use('/*', serveStatic({ 
-  root: './static/screenshots copy'
+  root: './static/dates'
 }));
 
 app.use('/*', serveStatic({ 
   root: './static/scripts'
 }));
+
+
 
 
 const port = 3000

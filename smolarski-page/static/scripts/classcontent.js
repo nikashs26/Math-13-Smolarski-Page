@@ -9,17 +9,17 @@ const query = window.matchMedia(
 // HOVER EFFECTS
 expandAllButton.addEventListener('mouseover', (event) => {
     if (numTimesExpandToggleClicked % 2 == 0) {
-        expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Plus_Border_Expand3.png) 20 round";
+        expandAllButton.style.borderImage = "url(../borders/Plus_Border_Expand3.png) 20 round";
     } else {
-        expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Minus_Border_Collapse3.png) 20 round";
+        expandAllButton.style.borderImage = "url(../borders/Minus_Border_Collapse3.png) 20 round";
     }
 })
 
 expandAllButton.addEventListener('mouseout', (event) => {
     if (numTimesExpandToggleClicked % 2 == 0) {
-        expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Plus_Border_Expand.png) 20 round";
+        expandAllButton.style.borderImage = "url(../borders/Plus_Border_Expand.png) 20 round";
     } else {
-        expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Minus_Border_Collapse.png) 20 round";
+        expandAllButton.style.borderImage = "url(../borders/Minus_Border_Collapse.png) 20 round";
     }
 })
 
@@ -41,7 +41,7 @@ function closeAllAccordions() {
         // summaryArray[i].style.transition = "none"; //seizure prevention in action
         detailArray[i].open = false;
     }
-    expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Plus_Border_Expand3.png) 20 round";
+    expandAllButton.style.borderImage = "url(../borders/Plus_Border_Expand3.png) 20 round";
     expandAllButton.innerHTML = 'EXPAND ALL';
     return;
 }
@@ -49,7 +49,7 @@ function expandAllAccordions() {
     for (i = 0; i < detailArray.length; i++) {
         detailArray[i].open = true;
     }
-    expandAllButton.style.borderImage = "url(../Math-13-Smolarski-Page/assets/borders/Minus_Border_Collapse3.png) 20 round";
+    expandAllButton.style.borderImage = "url(../borders/Minus_Border_Collapse3.png) 20 round";
     expandAllButton.innerHTML = 'COLLAPSE ALL';
     return;
 }
