@@ -1,8 +1,6 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { serveStatic } from '@hono/node-server/serve-static'
-import fs from 'fs';
-import path from 'path';
 
 const app = new Hono()
 
