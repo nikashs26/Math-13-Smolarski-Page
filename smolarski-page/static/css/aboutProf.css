@@ -33,7 +33,7 @@ body {
 
 /* Header */
 header nav ul {
-    margin-left:-2rem;
+    margin-left:0rem;
     list-style-type: none;
     display: flex;
     align-items: center; 
