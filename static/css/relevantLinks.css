@@ -58,13 +58,14 @@ header form input[type="search"] {
 }
 
 header form button {
-    background-color: var(--background-color);
-    color: var(--header-bg-color);
+    background-color: #f8f8f8;
+    color: #a6192e;
     border: none;
     cursor: pointer;
     padding: 0.4rem;
     border-radius: 4px;
-    margin-left: 0.5rem;
+    margin-left: -1.8rem;
+    
 }
 /*fall quarter specifically*/
 #main-heading {
@@ -91,11 +92,6 @@ h2
     color:white;
     font-size: 30px;
     
-}
-
-#textbook-options
-{
-    margin-top:3rem;
 }
 
 
@@ -180,16 +176,7 @@ header form input[type="search"] {
     width:15rem;
 }
 
-header form button {
-    background-color: #f8f8f8;
-    color: #a6192e;
-    border: none;
-    cursor: pointer;
-    padding: 0.4rem;
-    border-radius: 4px;
-    margin-left: -1.8rem;
-    
-}
+
 header form button a:hover{
     background-color: rgb(251, 22, 22);
     
@@ -302,6 +289,7 @@ header nav ul li a:hover {
 header form {
     display: flex;
     align-items: center;
+    
 }
 
 header form input[type="search"] {
@@ -310,15 +298,6 @@ header form input[type="search"] {
     border-radius: 0.25rem;
 }
 
-header form button {
-    background-color: #f8f8f8;
-    color: #b30738;
-    border: none;
-    cursor: pointer;
-    padding: 0.4rem;
-    border-radius: 4px;
-    margin-left: 0.5rem;
-}
 
 /* Footer styles */
 footer {
@@ -355,11 +334,13 @@ img, video, .container {
 
 body {
     word-wrap: break-word;  /* Prevent long words from breaking the layout */
+    
 }
 
 p{
     font-size: 20px;
     font-weight: 200;
+    text-decoration: none;
 }
 
 
@@ -374,9 +355,7 @@ summary {
     
 }
 
-summary::marker {
-    /* font-size: 1.5em; */
-}
+
 
 summary:hover {
     background-color: palevioletred;

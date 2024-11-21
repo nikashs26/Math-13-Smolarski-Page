@@ -113,7 +113,7 @@ header nav ul li a:hover {
 
 #math13-header
 {
-    margin-top:11rem;
+    margin-top:10rem;
     color:white;
     font-size: 30px;
     display: flex;
@@ -121,7 +121,7 @@ header nav ul li a:hover {
 
 }
 .nav-background {
-
+    margin-top:-1rem;
     position: absolute;
     top: 0;
     min-height: 20rem;
@@ -187,9 +187,6 @@ summary {
     
 }
 
-summary::marker {
-    /* font-size: 1.5em; */
-}
 
 summary:hover {
     background-color: palevioletred;
