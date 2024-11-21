@@ -126,7 +126,8 @@ ul button {
 
 #expandall-toggler {
     /* EXPAND ALL */
-    border-image: url(../borders/Plus_Border_Expand.png) 20 round;
+    border-image: url(../icons/borders/Plus_Border_Expand.png) 20 round;
+    /* smolarski-page\static\icons\borders\Plus_Border_Expand.png */
     display: block;
     border-width: 12px;
     width: 150px;
@@ -140,7 +141,7 @@ ul button:hover {
 summary {
     background-color: white;
     margin-bottom: 0;
-    padding: 1rem;
+    padding: 0.75rem;
     border-bottom: 1px solid gray;
     list-style: none;
 }
