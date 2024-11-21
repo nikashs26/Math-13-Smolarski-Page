@@ -183,7 +183,7 @@ summary {
     padding: 1rem;
     border-bottom: 1px solid gray;
     
-    list-style-image: url(/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/icons/icons/expand-arrow.svg);
+    list-style-image: url(expand-arrow.svg);
     
 }
 
@@ -198,7 +198,7 @@ details[open]>summary {
     color: white;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
-    list-style-image: url(/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/icons/icons/expand-arrow-down.svg) !important;
+    list-style-image: url(expand-arrow-down.svg) !important;
 }
 
 details[open]>summary::before {
@@ -207,7 +207,7 @@ details[open]>summary::before {
 
 details>summary:hover {
     /* transition-duration: 100ms; */
-    list-style-image: url(/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/icons/icons/expand-arrow-45deg.svg);
+    list-style-image: url(expand-arrow-45deg.svg);
 }
 
 details[open]>summary:hover {
