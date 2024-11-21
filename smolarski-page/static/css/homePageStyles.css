@@ -194,14 +194,7 @@ header form button a:hover{
     background-color: rgb(251, 22, 22);
     
 }
-.nav-background
-{
-    margin-top:-1rem;
-    position:absolute;
-    width:100%;
-    height:auto;
-    z-index: -3;
-}
+
 
 
 
