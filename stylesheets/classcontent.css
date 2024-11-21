@@ -126,7 +126,7 @@ ul button {
 
 #expandall-toggler {
     /* EXPAND ALL */
-    border-image: url(../borders/Plus_Border_Expand.png) 20 round;
+    border-image: url(../assets/borders/Plus_Border_Expand.png) 20 round;
     display: block;
     border-width: 12px;
     width: 150px;
