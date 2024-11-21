@@ -64,100 +64,62 @@ header form button {
     cursor: pointer;
     padding: 0.4rem;
     border-radius: 4px;
-    margin-left: -1.8rem;
-    
+    margin-left: 0.5rem;
 }
 
-header {
-    font-family: 'Inter', sans-serif;
+/* Hide default checkbox */
+label input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-container input~.eye,
+.checkbox-container input~.eyeslash {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; 
-    background-color: #a6192e;
-    color: #fff;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    
-    z-index: 1;
+    cursor: pointer;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 9.5rem;
+    border: solid black 1px;
 }
 
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    font-weight: 2000;
+.checkbox-container {
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    vertical-align: sub;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-weight:350;
-    font-style: normal;    
-    
+.checkbox-container:hover {
+    background-color: #e7e7e7;
 }
 
-
-
-
-header nav ul li a:hover {
-    background-color: #f8f8f8;
-    color: #a6192e;
-    border-radius: 4px;
+.checkbox-container label {
+    margin-left: 2.5rem;
+    vertical-align: middle;
+    /* position: relative; */
 }
 
-
-#math13-header
-{
-    margin-top:10rem;
-    color:white;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-
-}
-.nav-background {
-    margin-top:-1rem;
-    position: absolute;
-    top: 0;
-    min-height: 20rem;
-    left: 0;
-    width: 100%;
-    z-index: -3;
-
+/* Unchecked behavior (user cannot see previous weeks) */
+.checkbox-container input~.eyeslash {
+    opacity: 1;
 }
 
-/* Header */
-
-
-
-body {
-    padding:0;
-    margin:0;
-
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 200;
+.checkbox-container input~.eye {
+    opacity: 0;
 }
 
-header nav ul
-{
-    font-size: 16px;
+/* Checked behavior (user can see previous weeks) */
+.checkbox-container input:checked~.eyeslash {
+    opacity: 0;
 }
 
-header form {
-    display: flex;
-    align-items: center;
+.checkbox-container input:checked~.eye {
+
+    opacity: 1;
+    display: unset;
 }
 
-.last-updated
-{
-    margin-left:2rem;
-}
 
 body>section {
     margin-top:4rem;
@@ -177,49 +139,88 @@ footer p {
     color: white;
 }
 
+/* buttons */
+ul button {
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#expandall-toggler {
+    /* EXPAND ALL */
+    border-image: url(../assets/borders/Plus_Border_Expand.png) 20 round;
+    display: block;
+    border-width: 12px;
+    width: 150px;
+}
+
+ul button:hover {
+    background-color: #e7e7e7;
+
+}
+
 summary {
     background-color: white;
     margin-bottom: 0;
     padding: 1rem;
     border-bottom: 1px solid gray;
-    
-    list-style-image: url(expand-arrow.svg);
-    
+    list-style: none;
 }
 
 
 summary:hover {
     background-color: palevioletred;
-    /* border-left: 4px solid black; */
+    cursor: pointer;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    summary:hover {
+        transition: .1s;
+    }
+
+    summary:not(hover) {
+        /* transition: .1s; */
+        /* This will give seizures when using the "collapse all" button. FIXED WITH A JS CONDITION. */
+    }
+
+    .vert-line,
+    .horiz-line {
+        transition: .3s;
+        /* either .3 or .2s looks great */
+    }
+
+    .checkbox-container input~.eye,
+    .checkbox-container input~.eyeslash {
+        transition: 0.1s;
+    }
+
+    ul button {
+        transition: .1s;
+    }
+
+    @keyframes details-show {
+        from {
+            opacity: 0;
+            transform: translateY(-0.5em);
+        }
+    }
+
+    details[open]>article {
+        animation: details-show 150ms ease-in-out;
+    }
+}
+
+/* End of transitions */
 
 details[open]>summary {
     background-color: #a6192e;
     color: white;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
-    list-style-image: url(expand-arrow-down.svg) !important;
-}
-
-details[open]>summary::before {
-    transform: rotate(90deg);
-}
-
-details>summary:hover {
-    /* transition-duration: 100ms; */
-    list-style-image: url(expand-arrow-45deg.svg);
 }
 
 details[open]>summary:hover {
     color: #FFFF3D;
     /*slightly more contrast than default yellow*/
-    /* border-bottom: 2px solid black; */
-    /* border-right: 2px solid black; */
-}
-
-details[open]>summary:marker {
-    transform: rotate(90deg);
-    transition: 300ms;
 }
 
 article {
@@ -233,11 +234,6 @@ article {
 
 .entire-accordion {
     background-color: beige;
-
-}
-
-summary h2 {
-    display: inline;
 }
 
 .double-column {
@@ -275,14 +271,75 @@ summary h2 {
 
 .hw-column {
     flex-wrap: wrap;
+    padding-left: 1rem;
+    border-left: black 2px solid;
+    right: 1.1rem;
+    position: relative;
 }
 
 .notes-column {
     min-width: 16rem;
+    margin-right: 3rem;
 }
 
 .hw-column ul li {
-    /* display: inline-block; */
-    min-width: 30rem;
+    /* min-width: 30rem; */
     max-width: 64rem;
+}
+
+details summary h2 {
+    display: inline;
+    margin-left: 2.2rem;
+    user-select: none;
+}
+
+
+
+/* PLUS AND MINUS SYMBOLS!!! */
+.vert-line,
+.horiz-line {
+    display: block;
+    position: absolute;
+    width: 1.6rem;
+    height: 0.25rem;
+    background: #000;
+    margin-top: 0.9rem;
+}
+
+.vert-line {
+    rotate: 90deg;
+    /* background: chartreuse; */
+}
+
+details[open]>summary>.vert-line {
+    rotate: 180deg;
+    background: white;
+}
+
+details[open]>summary>.horiz-line {
+    rotate: 180deg;
+    background: white;
+}
+
+details>summary:hover>.vert-line {
+    transform: translateX(0.25rem);
+}
+
+details[open]>summary:hover>.vert-line {
+    transform: translateX(0);
+}
+
+details>summary:hover>.horiz-line {
+    transform: translateY(0.25rem);
+}
+
+details[open]>summary:hover>.horiz-line {
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        transition: none;
+    }
 }
