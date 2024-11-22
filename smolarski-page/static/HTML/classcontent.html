@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/classcontent.css">
-    <script src="scripts\classcontent.js"></script>
+    <link rel="stylesheet" href="./classcontent.css">
+    <script defer src="./classcontent.js"></script>
+    <script defer src="./datehandler.js"></script>
 </head>
 
 <body>
@@ -48,12 +49,20 @@
         Last updated: [INSERT AUTOMATICALLY UPDATED DATE AND TIME HERE]
     </h3>
     <ul>
-        <button onclick="toggleExpandAllAccordions()">EXPAND/COLLAPSE ALL</button>
-        <button>SHOW/HIDE PREVIOUS WEEKS</button>
+        <button id="expandall-toggler" onclick=toggleExpandAllAccordions()> EXPAND ALL </button>
+        <label class="checkbox-container">
+            <input type="checkbox" id="prev-weeks" name="prev-weeks" checked />
+            <img class="eye" src=".\icons\eye.svg">
+            <img class="eyeslash" src=".\icons\eyeslash.svg">
+            <label>Previous weeks</label>
+        </label>
+        <!-- <button>SHOW/HIDE PREVIOUS WEEKS</button> -->
     </ul>
     <div class="entire-accordion">
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 1</h2>
             </summary>
             <article>
@@ -61,18 +70,18 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec0.pdf">Lecture 0 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec1.pdf">Lecture 1 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec2.pdf">Lecture 2 Rough
-                                    Notes</a></li>
-                            <li><a href="https://en.wikipedia.org/wiki/Gateway_Arch">Inverted cosh function</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=FlvjWpWu99A">Square-wheeled
-                                    tricycle</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec0.pdf">
+                                    Lecture 0 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec1.pdf">
+                                    Lecture 1 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec2.pdf">
+                                    Lecture 2 Rough Notes</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Gateway_Arch">
+                                    Inverted cosh function</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=FlvjWpWu99A">
+                                    Square-wheeled tricycle</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -89,6 +98,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 2</h2>
             </summary>
             <article>
@@ -96,15 +107,15 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec3.pdf">Lecture 3 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec4.pdf">Lecture 4 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec5.pdf">Lecture 5 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec3.pdf">
+                                    Lecture 3 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec4.pdf">
+                                    Lecture 4 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec5.pdf">
+                                    Lecture 5 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -118,6 +129,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 3</h2>
             </summary>
             <article>
@@ -125,16 +138,15 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/TAYLORSERIESe.pdf">Computation of
-                                    e
-                                    using Taylor polynomials of different degrees</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec6.pdf">Lecture 6 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec7.pdf">Lecture 7 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/TAYLORSERIESe.pdf">
+                                    Computation of e using Taylor polynomials of different degrees</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec6.pdf">
+                                    Lecture 6 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec7.pdf">
+                                    Lecture 7 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -156,6 +168,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 4</h2>
             </summary>
             <article>
@@ -163,13 +177,13 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec8.pdf">Lecture 8 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec9.pdf">Lecture 9 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec8.pdf">
+                                    Lecture 8 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec9.pdf">
+                                    Lecture 9 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -190,6 +204,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 5</h2>
             </summary>
             <article>
@@ -197,13 +213,13 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec10.pdf">Lecture 10 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec11.pdf">Lecture 11 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec10.pdf">
+                                    Lecture 10 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec11.pdf">
+                                    Lecture 11 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -217,12 +233,13 @@
                 <ul>
                     <li>Wed, Oct 23 Review Session for Midterm II, 7:30-8:30pm, Place DS 206.</li>
                     <li>Fri, Oct 25 Midterm II</li>
-                    <li>Date 3</li>
                 </ul>
             </article>
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 6</h2>
             </summary>
             <article>
@@ -230,16 +247,16 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec13.pdf">Lecture 13 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec13.pdf">
+                                    Lecture 13 Rough Notes</a></li>
                             <li><a
-                                    href="https://media.pearsoncmg.com/aw/aw_thomas_calculus_ET_15/launch/TEU15_online_appendixB.pdf">Thomas'
-                                    Calculus, Appendix B on Matrices.</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec14.pdf">Lecture 14 Rough
-                                    Notes</a></li>
+                                    href="https://media.pearsoncmg.com/aw/aw_thomas_calculus_ET_15/launch/TEU15_online_appendixB.pdf">
+                                    Thomas' Calculus, Appendix B on Matrices.</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec14.pdf">
+                                    Lecture 14 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -253,6 +270,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 7</h2>
             </summary>
             <article>
@@ -260,22 +279,20 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec15.pdf">Lecture 15 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec16.pdf">Lecture 16 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec15.pdf">
+                                    Lecture 15 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec16.pdf">
+                                    Lecture 16 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
                             <li>(Assigned Mon, Nov 4 -- DUE Wed, Nov 6) Sec 12.6, p. 753, ## 13, 15, 17, 26, 27, 31, 42.
                             </li>
                             <li>(Assigned Wed, Nov 6 -- DUE Mon, Nov 11, after Midterm III) Sec 14.1, p. 808, ##22 a,b,c
-                                ;
-                                24 a,b,c ; 28 a,b,c ; 53, 55, 57;
-                                Sec 14.2, p. 816, ## 1, 8, 15, 43</li>
+                                ; 24 a,b,c ; 28 a,b,c ; 53, 55, 57; Sec 14.2, p. 816, ## 1, 8, 15, 43</li>
                             <li>TURN IN THE PAGES YOU PRINT FROM CalcPlot3D. Do NOT draw them by hand!</li>
                         </ul>
                     </div>
@@ -289,6 +306,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 8</h2>
             </summary>
             <article>
@@ -296,19 +315,20 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec17.pdf">Lecture 17 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma166/bma166extra3.pdf">2-D Metal Plate
-                                    Heat Equation Example</a></li>
-                            <li><a href="http://jeff560.tripod.com/calculus.html">Earliest Uses of
-                                    Symbols of Calculus</a> (Including a reference to the "partial d" symbol.)</li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec18.pdf">Lecture 18 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec19.pdf">Lecture 19 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec17.pdf">
+                                    Lecture 17 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma166/bma166extra3.pdf">
+                                    2-D Metal Plate Heat Equation Example</a></li>
+                            <li><a href="http://jeff560.tripod.com/calculus.html">
+                                    Earliest Uses of Symbols of Calculus</a>
+                                (Including a reference to the "partial d" symbol.)</li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec18.pdf">
+                                    Lecture 18 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec19.pdf">
+                                    Lecture 19 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -322,6 +342,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 9</h2>
             </summary>
             <article>
@@ -329,15 +351,15 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec20.pdf">Lecture 20 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec21.pdf">Lecture 21 Rough
-                                    Notes</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec22.pdf">Lecture 22 Rough
-                                    Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec20.pdf">
+                                    Lecture 20 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec21.pdf">
+                                    Lecture 21 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec22.pdf">
+                                    Lecture 22 Rough Notes</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Homework</h3>
                         <ul>
@@ -351,6 +373,8 @@
         </details>
         <details>
             <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
                 <h2>Week 10 🏁</h2>
             </summary>
             <article>
@@ -358,18 +382,15 @@
                     <div class="notes-column">
                         <h3>Class Notes</h3>
                         <ul>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay1.pdf">Review Notes
-                                    Day
-                                    1</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay2.pdf">Review Notes
-                                    Day
-                                    2</a></li>
-                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay3.pdf">Review Notes
-                                    Day
-                                    3</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay1.pdf">
+                                    Review Notes Day 1</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay2.pdf">
+                                    Review Notes Day 2</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay3.pdf">
+                                    Review Notes Day 3</a></li>
                         </ul>
                     </div>
-                    <div id="line-divider"></div>
+
                     <div class="hw-column">
                         <h3>Review (no new homework)</h3>
                         <ul>

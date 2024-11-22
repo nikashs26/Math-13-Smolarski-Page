@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/homePageStyles.css">
+    <link rel="stylesheet" href="./homePageStyles.css">
     <title>HomePage</title>
 </head>
 <body>
-    <header class="site-header">
+    <header>
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                
-                <li><a href="#course-content">COURSE CONTENT</a></li>
-                <li><a href="#about">ABOUT PROFESSOR SMOLARSKI</a></li>
+                <li><a href="homePage.html">HOME</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="classcontent.html">COURSE CONTENT</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
             </ul>
         </nav>
         <form role="search" aria-label="Search site">
-            <input type="search" name="q" placeholder="Search" aria-label="Search input">
-            <button type="submit" aria-label="Search button">🔍</button>
+            <input type="search" name="q" placeholder="Search" aria-label="Search">
+            <button type="submit">🔍</button>
         </form>
-    </header>
+    </header>    
+
     
-    <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/nav-background.png" alt="Mathy Background" class="nav-background">
+    <img src="nav-background.png" alt="Mathy Background" class="nav-background">
     <h2 id = math13-header>MATH 13 - CALCULUS III</h2>
     <h1 id="main-heading">FALL QUARTER</h1> 
     <h2 id = "textbook-options">Textbook Options</h2>
@@ -46,27 +48,27 @@
     <section>
         <div id = "handout-links-and-images">
             <article> 
-                <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/syllabus.png" alt="Syllabus Statements" class="syllabus">
+                <img src="syllabus.png" alt="Syllabus Statements" class="syllabus">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/SYL24f.pdf">SYLLABUS</p>
             </article>
             <article>
-                <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/syllabusStatements.png" alt="Syllabus Statements" class="syllabus-statements">
+                <img src="syllabusStatements.png" alt="Syllabus Statements" class="syllabus-statements">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/SCU_Syllabus_Statements_Extract_2023-2024.pdf">SYLLABUS STATEMENTS</a></p>
             </article>
             <article>
-                <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/handoutsList.png" alt="Handout List" class="handout-list">
+                <img src="handoutsList.png" alt="Handout List" class="handout-list">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/MT13handF24.pdf">HANDOUT LIST</p>
             </article>
             <article>
-                <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/knowledgeAssumed.png" alt="Knowledge Assumed" class="knowledge-assumed">
+                <img src="knowledgeAssumed.png" alt="Knowledge Assumed" class="knowledge-assumed">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma11/Math11-12-13-TrigFacts.pdf">KNOWLEDGE ASSUMED</a></p>
             </article>
             <article>
-                <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/8amreg.png" alt="8 AM Registration Handout" class="eightam-reg">
+                <img src="8amreg.png" alt="8 AM Registration Handout" class="eightam-reg">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski20407-8am-F24.pdf">MYMATHLAB-8:00AM CLASS</a></p>
             </article>
             <article>
-                <img src = "/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/10amreg.png" alt="10 AM Registration Handout" class = "tenam-reg">
+                <img src = "10amreg.png" alt="10 AM Registration Handout" class = "tenam-reg">
                 <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski54070-1030-F24.pdf">MYMATHLAB-10:00AM CLASS</a></p>
             </article>
         </div>
@@ -74,7 +76,9 @@
         
         <h2 id = CC>Class Content</h2>
         <p>
-            <button class="course-content">Homework, Class Notes, and Important Dates</button>
+            <a href = "classcontent.html">
+                <button class="course-content">Homework, Class Notes, and Important Dates</button>
+            </a>
         </p>
     </section>
     <div id = "rectangle3"></div>
@@ -134,7 +138,7 @@
         <article id = "relevant-web-links-article">
             
             <h2 id = relevant-web-links-title>Relevant Web Links</h2>
-            <p class = relevant-links-paragraph><a href="#rwl">This page</a> provides links to various pages with interactive exercises related to Thomas' Calculus and in the order of contents in the Math 13 course.</p>
+            <p class = relevant-links-paragraph><a href="relevantLinks.html">This page</a> provides links to various pages with interactive exercises related to Thomas' Calculus and in the order of contents in the Math 13 course.</p>
             
         </article>
         <div id = "line-divider-2"></div>
@@ -164,6 +168,6 @@
 <footer>
     <p>Disclaimer: The content on any pages accessible from this page or in any pages associated with the directory "webpages.scu.edu/~dsmolarski/" reflects only the views of Dennis C. Smolarski and in no way represents the Society of Jesus, either globally, or in the Jesuit West Province, or at Santa Clara University Jesuit Community.<br>
     This index page was last updated on 18 June 2024.</p>
-    <img src="/Users/nikashshanbhag/Documents/GitHub/Math-13-Smolarski-Page/static/assets/SCUlogo.png" alt="SCU Logo" class="footer-logo">
+    <img src="SCUlogo.png" alt="SCU Logo" class="footer-logo">
 </footer>
 </html>
