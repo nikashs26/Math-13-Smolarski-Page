@@ -17,7 +17,7 @@ expandAllButton.addEventListener('mouseover', (event) => {
 
 expandAllButton.addEventListener('mouseout', (event) => {
     if (numTimesExpandToggleClicked % 2 == 0) {
-        expandAllButton.style.borderImage = "url(../borders/Plus_Border_Expand.png) 20 round";
+        expandAllButton.style.borderImage = "url(/Math-13-Smolarski-Page/smolarski-page/static/icons/borders/Plus_Border_Expand.png) 20 round";
     } else {
         expandAllButton.style.borderImage = "url(../borders/Minus_Border_Collapse.png) 20 round";
     }

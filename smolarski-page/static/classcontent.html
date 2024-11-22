@@ -5,37 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./classcontent.css">
-    <script defer src="./classcontent.js"></script>
-    <script defer src="./datehandler.js"></script>
+    <link rel="stylesheet" href="css/classcontent.css">
+    <script defer src="scripts/classcontent.js"></script>
+    <script defer src="scripts/datehandler.js"></script>
 </head>
 
+<div id="bigwhite"></div>
+
 <body>
-    <nav>
-        <header>
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#course-content">COURSE CONTENT</a></li>
-                    <li><a href="#about">ABOUT PROFESSOR SMOLARSKI</a></li>
-                </ul>
-            </nav>
-            <form role="search" aria-label="Search site">
-                <input type="search" name="q" placeholder="Search" aria-label="Search">
-                <button type="submit">🔍</button>
-            </form>
-        </header>
-    </nav>
     <header>
-        <title>
-            MATH 13 - CALCULUS III
-        </title>
-        <img />
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="homePage.html">HOME</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="classcontent.html">COURSE CONTENT</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
+            </ul>
+        </nav>
+        <form role="search" aria-label="Search site">
+            <input type="search" name="q" placeholder="Search" aria-label="Search">
+            <button type="submit">:mag:</button>
+        </form>
     </header>
-    <title>
-        Class Content
-    </title>
-    <section>
+    <img src="assets/nav-background.png" alt="Mathy Background" class="nav-background">
+    <h2 id=math13-header>MATH 13 - CALCULUS III</h2>
+    <section id="notice">
         <h3>
             Notice
         </h3>
@@ -52,8 +47,8 @@
         <button id="expandall-toggler" onclick=toggleExpandAllAccordions()> EXPAND ALL </button>
         <label class="checkbox-container">
             <input type="checkbox" id="prev-weeks" name="prev-weeks" checked />
-            <img class="eye" src=".\icons\eye.svg">
-            <img class="eyeslash" src=".\icons\eyeslash.svg">
+            <img class="eye" src="./icons/icons/eye.svg">
+            <img class="eyeslash" src="./icons/icons/eyeslash.svg">
             <label>Previous weeks</label>
         </label>
         <!-- <button>SHOW/HIDE PREVIOUS WEEKS</button> -->

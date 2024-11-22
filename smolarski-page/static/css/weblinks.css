@@ -381,8 +381,7 @@ details>summary:hover {
 }
 
 details[open]>summary:hover {
-    color: #FFFF3D;
-   
+    color: #FFFF3D; 
 }
 
 details[open]>summary:marker {
