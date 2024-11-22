@@ -4,9 +4,20 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 200;
+    margin: 0;
+    padding: 0;
 }
 
-* HEADER */
+#bigwhite {
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    z-index: -2;
+}
+
+/* HEADER */
 
 /* Default light theme styles */
 :root {
@@ -138,9 +149,6 @@ header nav ul li a {
 
 }
 
-
-
-
 header nav ul li a:hover {
     background-color: #f8f8f8;
     color: #a6192e;
@@ -252,6 +260,9 @@ label input[type="checkbox"] {
 body>section {
     background-color: lightgray;
     padding: 1rem;
+    margin-top: 6rem;
+    position: relative;
+
 }
 
 footer {
