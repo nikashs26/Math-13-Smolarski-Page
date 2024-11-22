@@ -126,11 +126,13 @@ ul button {
 
 #expandall-toggler {
     /* EXPAND ALL */
+    width: 9rem;
     border-image: url(../icons/borders/Plus_Border_Expand.png) 20 round;
     /* smolarski-page\static\icons\borders\Plus_Border_Expand.png */
     display: block;
     border-width: 12px;
-    width: 150px;
+    /* width: 150px; */
+    cursor: pointer;
 }
 
 ul button:hover {
