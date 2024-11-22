@@ -4,35 +4,67 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 200;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #a6192e;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#bigwhite {
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    z-index: -2;
 }
+
+/* HEADER */
+
+/* Default light theme styles */
+:root {
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --header-bg-color: #a6192e;
+    --header-text-color: #fff;
+    --button-bg-color: #a6192e;
+    --button-text-color: #fff;
+    --divider-color: #a6192e;
+    --link-color: #a6192e;
+    --link-hover-color: #c52a35;
+    --dropdown-bg-color: #fafafa;
+    --footer-bg-color: #a6192e;
+    --footer-text-color: #fff;
+}
+
+
+/* Header */
 
 header nav ul {
+    margin-left: -2rem;
     list-style-type: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
 }
 
 header nav ul li {
-    margin-right: 1rem;
+
+    margin: 0 1rem;
+    position: relative;
+}
+
+
+.nav-divider {
+    width: 1px;
+    height: 20px;
+    background-color: var(--header-text-color);
+    margin: 0;
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--header-text-color);
     text-decoration: none;
     font-weight: bold;
-}
-
-header form {
-    display: flex;
-    align-items: center;
 }
 
 header form input[type="search"] {
@@ -42,13 +74,132 @@ header form input[type="search"] {
 }
 
 header form button {
+    background-color: var(--background-color);
+    color: var(--header-bg-color);
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+/*fall quarter specifically*/
+#main-heading {
+    color: #b30738;
+    margin-top: 8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: #a6192e;
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+#math13-header {
+
+    margin-top: 10rem;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-background {
+
+    position: absolute;
+    top: 0;
+    min-height: 20rem;
+    left: 0;
+    width: 100%;
+    z-index: -3;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: 2000;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 350;
+    font-style: normal;
+
+}
+
+header nav ul li a:hover {
+    background-color: #f8f8f8;
+    color: #a6192e;
+    border-radius: 4px;
+}
+
+@media (max-width: 10rem) {
+    header form {
+        top: 5rem;
+
+
+    }
+
+}
+
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input[type="search"] {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.25rem;
+    height: 2.2rem;
+    width: 15rem;
+}
+
+header form button {
     background-color: #f8f8f8;
     color: #a6192e;
     border: none;
     cursor: pointer;
     padding: 0.4rem;
     border-radius: 4px;
-    margin-left: 0.5rem;
+    margin-left: -1.8rem;
+
+}
+
+header form button a:hover {
+    background-color: rgb(251, 22, 22);
+
+}
+
+.nav-background {
+    margin-top: -1rem;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -3;
 }
 
 /* Hide default checkbox */
@@ -66,6 +217,7 @@ label input[type="checkbox"] {
     padding-right: 9.5rem;
     border: solid black 1px;
 }
+
 
 .checkbox-container {
     padding-right: 0.5rem;
@@ -108,6 +260,9 @@ label input[type="checkbox"] {
 body>section {
     background-color: lightgray;
     padding: 1rem;
+    margin-top: 6rem;
+    position: relative;
+
 }
 
 footer {
@@ -155,15 +310,9 @@ summary:hover {
         transition: .1s;
     }
 
-    summary:not(hover) {
-        /* transition: .1s; */
-        /* This will give seizures when using the "collapse all" button. FIXED WITH A JS CONDITION. */
-    }
-
     .vert-line,
     .horiz-line {
         transition: .3s;
-        /* either .3 or .2s looks great */
     }
 
     .checkbox-container input~.eye,
@@ -217,7 +366,6 @@ article {
 .double-column {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 #line-divider {
