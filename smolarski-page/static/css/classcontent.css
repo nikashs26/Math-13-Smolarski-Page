@@ -299,15 +299,9 @@ summary:hover {
         transition: .1s;
     }
 
-    summary:not(hover) {
-        /* transition: .1s; */
-        /* This will give seizures when using the "collapse all" button. FIXED WITH A JS CONDITION. */
-    }
-
     .vert-line,
     .horiz-line {
         transition: .3s;
-        /* either .3 or .2s looks great */
     }
 
     .checkbox-container input~.eye,
@@ -361,7 +355,6 @@ article {
 .double-column {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
 }
 
 #line-divider {
