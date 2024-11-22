@@ -54,5 +54,23 @@ function expandAllAccordions() {
     return;
 }
 
+function allAccordionsAreOpen() {
+    for (i = 0; i < detailArray.length; i++) {
+        if (!detailArray[i].open) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function allAccordionsAreClosed() {
+    for (i = 0; i < detailArray.length; i++) {
+        if (detailArray[i].open) {
+            return;
+        }
+    }
+    return true;
+}
+
 // SHOW/HIDE PREVIOUS WEEKS
 let currDate = Date.now();
