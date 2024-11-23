@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Inter', sans-serif;
+}
 /* Default light theme styles */
 :root {
     --background-color: #f8f8f8;
@@ -65,7 +67,7 @@ header form button {
 #main-heading {
     color: #b30738;
     margin-top: 8rem;
-    font-family: 'Inter', sans-serif;
+    
     font-size: 30px;
     text-align: center;
 }
@@ -448,7 +450,7 @@ summary
     padding: 1rem;
 
     width: 20rem;
-    
+    list-style-image: url(../icons/icons/expand-arrow.svg);
 }
 
 summary, #second-list ul li
@@ -465,6 +467,7 @@ summary:hover
 {
     width:100%;
     background-color: palevioletred;
+    list-style-image: url(../icons/icons/expand-arrow-45deg.svg);
 }
 
 details[open]>summary
@@ -474,6 +477,7 @@ details[open]>summary
     width:100%;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
+    list-style-image: url(../icons/icons/expand-arrow-down.svg) !important;
     
 }
 

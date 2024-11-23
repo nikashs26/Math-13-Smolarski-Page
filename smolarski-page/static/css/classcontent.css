@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+
     font-weight: 200;
     margin: 0;
     padding: 0;
@@ -121,6 +121,10 @@ header {
     justify-content: center;
 
 }
+.last-updated
+{
+    margin-left:1.2rem;
+}
 
 .nav-background {
 
@@ -202,6 +206,13 @@ header form button a:hover {
     z-index: -3;
 }
 
+.notice-title
+{
+    font-size:25px;
+}
+body p{
+    font-size: 20px;
+}
 /* Hide default checkbox */
 label input[type="checkbox"] {
     display: none;
@@ -220,9 +231,9 @@ label input[type="checkbox"] {
 
 
 .checkbox-container {
-    padding-right: 0.5rem;
+    padding-right: 2.4rem;
     padding-top: 0.3rem;
-    padding-bottom: 0.4rem;
+    padding-bottom: .85rem;
     vertical-align: sub;
 }
 
@@ -265,13 +276,30 @@ body>section {
 
 }
 
+
 footer {
-    background-color: #a6192e;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
 }
 
 footer p {
-    color: white;
+    max-width: 70%;
+    margin-bottom: 0.5rem;
+    font-size:.9rem;
 }
+
+.footer-logo {
+    width: 80px;
+}
+
 
 /* buttons */
 ul button {
@@ -281,7 +309,7 @@ ul button {
 
 #expandall-toggler {
     /* EXPAND ALL */
-    border-image: url(/Math-13-Smolarski-Page/smolarski-page/static/icons/borders/Plus_Border_Expand.png) 20 round;
+    border-image: url(/icons/borders/Plus_Border_Expand.png) 20 round;
     display: block;
     border-width: 12px;
     width: 150px;
