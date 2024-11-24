@@ -1,4 +1,5 @@
 body{
+    
     font-family: 'Inter', sans-serif;
 }
 /* Default light theme styles */
@@ -16,7 +17,14 @@ body{
     --footer-bg-color: #a6192e;
     --footer-text-color: #fff;
 }
-
+#bigwhite {
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    z-index: -2;
+}
 
 /* Header */
 
@@ -66,8 +74,8 @@ header form button {
 /*fall quarter specifically*/
 #main-heading {
     color: #b30738;
-    margin-top: 8rem;
-    
+
+    margin-top:8rem;
     font-size: 30px;
     text-align: center;
 }
@@ -87,7 +95,7 @@ h2
 
 #textbook-options
 {
-    margin-top:3rem;
+    margin-top:4rem;
 }
 
 
@@ -113,13 +121,12 @@ header {
 
 #math13-header
 {
-
+    font-weight:500;
     margin-top:10rem;
     color:white;
     font-size: 30px;
     display: flex;
     justify-content: center;
-
 }
 .nav-background {
 
@@ -208,6 +215,7 @@ header form button a:hover{
 
 
 
+
 /*info text left*/
 #Access {
     text-align: left;
@@ -242,8 +250,8 @@ header form button a:hover{
 #rectangle
 {
     position: absolute;
-    top: 20rem; 
-    margin-top:3rem;
+    top: 16rem; 
+    margin-top:8rem;
     width: 100%; 
     height: 12rem; 
     background-color: #F4F2F0; 
@@ -280,9 +288,7 @@ header form button a:hover{
 
 #line-divider-2
 {
-    
-    
-    
+
 
     width: .08%; 
     height: 40rem; 
@@ -479,6 +485,11 @@ details[open]>summary
     border-bottom: none;
     list-style-image: url(../icons/icons/expand-arrow-down.svg) !important;
     
+}
+
+details[open]>summary:hover
+{
+    color: rgb(222, 214, 214);
 }
 
 
