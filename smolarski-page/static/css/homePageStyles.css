@@ -1,4 +1,7 @@
-
+body{
+    
+    font-family: 'Inter', sans-serif;
+}
 /* Default light theme styles */
 :root {
     --background-color: #f8f8f8;
@@ -14,7 +17,14 @@
     --footer-bg-color: #a6192e;
     --footer-text-color: #fff;
 }
-
+#bigwhite {
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    z-index: -2;
+}
 
 /* Header */
 
@@ -28,7 +38,7 @@ header nav ul {
 
 header nav ul li {
     
-    margin: 0 1rem; 
+    margin: 0 .3rem;
     position: relative; 
 }
 
@@ -64,8 +74,8 @@ header form button {
 /*fall quarter specifically*/
 #main-heading {
     color: #b30738;
-    margin-top: 8rem;
-    font-family: 'Inter', sans-serif;
+
+    margin-top:8rem;
     font-size: 30px;
     text-align: center;
 }
@@ -85,7 +95,7 @@ h2
 
 #textbook-options
 {
-    margin-top:3rem;
+    margin-top:4rem;
 }
 
 
@@ -111,13 +121,12 @@ header {
 
 #math13-header
 {
-
+    font-weight:500;
     margin-top:10rem;
     color:white;
     font-size: 30px;
     display: flex;
     justify-content: center;
-
 }
 .nav-background {
 
@@ -206,6 +215,7 @@ header form button a:hover{
 
 
 
+
 /*info text left*/
 #Access {
     text-align: left;
@@ -240,8 +250,8 @@ header form button a:hover{
 #rectangle
 {
     position: absolute;
-    top: 20rem; 
-    margin-top:3rem;
+    top: 16rem; 
+    margin-top:8rem;
     width: 100%; 
     height: 12rem; 
     background-color: #F4F2F0; 
@@ -278,9 +288,7 @@ header form button a:hover{
 
 #line-divider-2
 {
-    
-    
-    
+
 
     width: .08%; 
     height: 40rem; 
@@ -448,7 +456,7 @@ summary
     padding: 1rem;
 
     width: 20rem;
-    
+    list-style-image: url(../icons/icons/expand-arrow.svg);
 }
 
 summary, #second-list ul li
@@ -465,6 +473,7 @@ summary:hover
 {
     width:100%;
     background-color: palevioletred;
+    list-style-image: url(../icons/icons/expand-arrow-45deg.svg);
 }
 
 details[open]>summary
@@ -474,7 +483,13 @@ details[open]>summary
     width:100%;
     box-shadow: 0 1rem 1rem -15px black;
     border-bottom: none;
+    list-style-image: url(../icons/icons/expand-arrow-down.svg) !important;
     
+}
+
+details[open]>summary:hover
+{
+    color: rgb(222, 214, 214);
 }
 
 
@@ -585,27 +600,23 @@ body section ul li summary
 footer {
     background-color: #a6192e;
     color: #fff;
-    
-    padding: 1rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.9rem;
     position: relative;
     margin-top: auto;
-    width: 98vw;
+    width: 100%;
+    height:8rem;
 }
 
 footer p {
+    margin:1rem;
     max-width: 70%;
     margin-bottom: 0.5rem;
 }
-
 .footer-logo {
     width: 80px;
-    
-}
-
-.footer-logo {
-    width: 80px;
+    margin-right:.6rem;
 }

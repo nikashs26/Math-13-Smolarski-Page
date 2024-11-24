@@ -9,32 +9,32 @@ app.get('/', (c) => {
 })
 
 app.use('/*', serveStatic({ 
-  root: './static/HTML'
+  root: './static'
 }));
 
-app.use('/*', serveStatic({ 
-  root: './static/assets'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/assets'
+// }));
 
-app.use('/*', serveStatic({ 
-  root: './static/css'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/css'
+// }));
 
-app.use('/*', serveStatic({ 
-  root: './static/borders'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/borders'
+// }));
 
-app.use('/*', serveStatic({ 
-  root: './static/icons'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/icons'
+// }));
 
-app.use('/*', serveStatic({ 
-  root: './static/dates'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/dates'
+// }));
 
-app.use('/*', serveStatic({ 
-  root: './static/scripts'
-}));
+// app.use('/*', serveStatic({ 
+//   root: './static/scripts'
+// }));
 
 
 
