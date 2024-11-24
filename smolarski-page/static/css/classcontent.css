@@ -49,7 +49,7 @@ header nav ul {
 
 header nav ul li {
 
-    margin: 0 1rem;
+    margin: 0 .3rem;
     position: relative;
 }
 
@@ -289,7 +289,7 @@ footer {
     font-size: 0.9rem;
     position: relative;
     margin-top: auto;
-    width: 100%;
+    width: 98.3vw;
 }
 
 footer p {
