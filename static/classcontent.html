@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/classcontent.css">
+    <script defer src="scripts/classcontent.js"></script>
+    <script defer src="scripts/datehandler.js"></script>
+</head>
+
+<div id="bigwhite"></div>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="classcontent.html">COURSE CONTENT</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
+            </ul>
+        </nav>
+        <form role="search" aria-label="Search site">
+            <input type="search" name="q" placeholder="Search" aria-label="Search">
+            <button type="submit">🔍</button>
+        </form>
+    </header>
+    <img src="assets/nav-background.png" alt="Mathy Background" class="nav-background">
+    <h2 id=math13-header>MATH 13 - CALCULUS III</h2>
+    <h1 id="main-heading">Course Content</h1> 
+    <section>
+        <h3 class = "notice-title">
+            Notice
+        </h3>
+        <p>All assignments, unless otherwise noted, are taken from Thomas' Calculus (15th edition). All assignments are
+            due on the next class day (except when there is a test scheduled.)</p>
+        <p>All listings of assignments are tentative until the end of the actual lecture. In case of doubt or
+            discrepancy, please contact the instructor. This listing serves only as a record of assignments and is not
+            meant to substitute receiving assignments in class itself.</p>
+    </section>
+    <h3 class = last-updated>
+        Last updated: June 18, 2024
+    </h3>
+    <ul>
+        <button id="expandall-toggler" onclick=toggleExpandAllAccordions()> EXPAND ALL </button>
+        <label class="checkbox-container">
+            <input type="checkbox" id="prev-weeks" name="prev-weeks" checked />
+            <img class="eye" src="/icons/icons/eye.svg">
+            <img class="eyeslash" src="/icons/icons/eyeslash.svg">
+            <label>Inactive weeks</label>
+        </label>
+        <!-- <button>SHOW/HIDE PREVIOUS WEEKS</button> -->
+    </ul>
+    <div class="entire-accordion">
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 1</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec0.pdf">
+                                    Lecture 0 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec1.pdf">
+                                    Lecture 1 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec2.pdf">
+                                    Lecture 2 Rough Notes</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Gateway_Arch">
+                                    Inverted cosh function</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=FlvjWpWu99A">
+                                    Square-wheeled tricycle</a></li>
+                        </ul>
+                    </div>
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Monday, Sep 23, 2024 -- DUE the next class day, i.e., Wed, Sep 25). MyMathLab
+                                Intro. and MyMathLab Math 11-12 Review.</li>
+                            <li>(Assigned Wed, Sep 25 -- DUE Fri, Sep 27) Sec. 7.3, p. 446, ## 3, 5, 11, 14, 17, 41, 47,
+                                55,
+                                79.</li>
+                            <li>(Assigned Fri, Sep 27 -- DUE Mon, Sep 30) ON-LINE HW, MyMathLab, Sec. 7.3 HWB</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 2</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec3.pdf">
+                                    Lecture 3 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec4.pdf">
+                                    Lecture 4 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec5.pdf">
+                                    Lecture 5 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Sep 30 -- DUE Wed, Oct 2) ON-LINE HW, MyMathlab, Sec. 10.1 HW.</li>
+                            <li>(Assigned Wed, Oct 2 -- DUE Fri, Oct 4) ON-LINE HW, MyMathLab, Sec. 10.2 HW.</li>
+                            <li>(Assigned Fri, Oct 4 -- DUE Mon, Oct 7) ON-LINE HW, MyMathLab, Sec 10.8 HW.</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 3</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/TAYLORSERIESe.pdf">
+                                    Computation of e using Taylor polynomials of different degrees</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec6.pdf">
+                                    Lecture 6 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec7.pdf">
+                                    Lecture 7 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Oct 7 -- DUE Wed, Oct 9) Sec 10.9, p. 643, ## 1, 3, 9, 15, 19, 31, 39,
+                                45.
+                            </li>
+                            <li>(Assigned Wed, Oct 9 -- DUE After Mid I and Holiday, Wed, Oct 16) ON-LINE HW, MyMathLab,
+                                Sec
+                                10.10 HW.</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>Wed, Oct 9 Review Session for Midterm I, 7:30-8:30pm, DS 206.</li>
+                    <li>Fri, Oct 11 Midterm I</li>
+                </ul>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 4</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec8.pdf">
+                                    Lecture 8 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec9.pdf">
+                                    Lecture 9 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Wed, Oct 16 -- DUE Fri, Oct 18) Sec 11.1, p. 665, ## 1, 5, 8; Sec 11.2, p.
+                                675, ##
+                                1, 3, 7, 25, 27.</li>
+                            <li>(Assigned Fri, Oct 18 -- DUE Mon, Oct 21) Appendix A.3, p. AP-17, ##21, 25 AND ON-LINE
+                                HW,
+                                MyMathLab, Sec 11.6-A HW</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>Monday, Oct 14 -- Indigenous Peoples' Day -- Holiday -- no classes</li>
+                </ul>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 5</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec10.pdf">
+                                    Lecture 10 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec11.pdf">
+                                    Lecture 11 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Oct 21 -- DUE Wed, Oct 23) ON-LINE HW, MyMathLab, Sec 11.6-B HW.</li>
+                            <li>(Assigned Wed, Oct 23 -- DUE Mon, Oct 28, after Midterm II) ON-LINE HW, MyMathLab, Sec
+                                12.1-12.2 HW.</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>Wed, Oct 23 Review Session for Midterm II, 7:30-8:30pm, Place DS 206.</li>
+                    <li>Fri, Oct 25 Midterm II</li>
+                </ul>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 6</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec13.pdf">
+                                    Lecture 13 Rough Notes</a></li>
+                            <li><a
+                                    href="https://media.pearsoncmg.com/aw/aw_thomas_calculus_ET_15/launch/TEU15_online_appendixB.pdf">
+                                    Thomas' Calculus, Appendix B on Matrices.</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec14.pdf">
+                                    Lecture 14 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Oct 28 -- DUE Wed, Oct 30) ON-LINE HW, MyMathLab, Sec 12.3 HW</li>
+                            <li>(Assigned Wed, Oct 30 -- DUE Fri, Nov 1) ON-LINE HW, MyMathLab, Sec 12.4 HW</li>
+                            <li>(Assigned Fri, Nov 1 -- DUE Mon, Nov 4) ON-LINE HW, MyMathLab, Sec 12.5 HW</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 7</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec15.pdf">
+                                    Lecture 15 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec16.pdf">
+                                    Lecture 16 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Nov 4 -- DUE Wed, Nov 6) Sec 12.6, p. 753, ## 13, 15, 17, 26, 27, 31, 42.
+                            </li>
+                            <li>(Assigned Wed, Nov 6 -- DUE Mon, Nov 11, after Midterm III) Sec 14.1, p. 808, ##22 a,b,c
+                                ; 24 a,b,c ; 28 a,b,c ; 53, 55, 57; Sec 14.2, p. 816, ## 1, 8, 15, 43</li>
+                            <li>TURN IN THE PAGES YOU PRINT FROM CalcPlot3D. Do NOT draw them by hand!</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>Wed, Nov 6 Review Session for Midterm III, 7:30-8:30pm, Place DS 206.</li>
+                    <li>Fri, Nov 8 Midterm III</li>
+                </ul>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 8</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec17.pdf">
+                                    Lecture 17 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma166/bma166extra3.pdf">
+                                    2-D Metal Plate Heat Equation Example</a></li>
+                            <li><a href="http://jeff560.tripod.com/calculus.html">
+                                    Earliest Uses of Symbols of Calculus</a>
+                                (Including a reference to the "partial d" symbol.)</li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec18.pdf">
+                                    Lecture 18 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec19.pdf">
+                                    Lecture 19 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Nov 11 -- DUE Wed, Nov 13) ON-LINE HW, MyMathLab, Sec 14.3 HW</li>
+                            <li>(Assigned Wed, Nov 13 -- DUE Fri, Nov 15) ON-LINE HW, MyMathLab, Sec 14.4 HW</li>
+                            <li>(Assigned Fri, Nov 15 -- DUE Mon, Nov 18) ON-LINE HW, MyMathLab, Sec 14.5 HW</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 9</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec20.pdf">
+                                    Lecture 20 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec21.pdf">
+                                    Lecture 21 Rough Notes</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Math13Lec22.pdf">
+                                    Lecture 22 Rough Notes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Homework</h3>
+                        <ul>
+                            <li>(Assigned Mon, Nov 18 -- Due Wed, Nov 20) ON-LINE HW, MyMathLab, Sec 14.6 HW</li>
+                            <li>(Assigned Wed, Nov 20 -- DUE Fri, Nov 22) ON-LINE HW, MyMathLab, Sec 14.7 HW</li>
+                            <li>(Assigned Fri, Nov 22 -- DUE Mon, Dec 2) ON-LINE HW, MyMathLab, Sec 14.8 HW</li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </details>
+        <details>
+            <summary>
+                <div class="vert-line"></div>
+                <div class="horiz-line"></div>
+                <h2>Week 10 🏁</h2>
+            </summary>
+            <article>
+                <section class="double-column">
+                    <div class="notes-column">
+                        <h3>Class Notes</h3>
+                        <ul>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay1.pdf">
+                                    Review Notes Day 1</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay2.pdf">
+                                    Review Notes Day 2</a></li>
+                            <li><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Mt13ReviewDay3.pdf">
+                                    Review Notes Day 3</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hw-column">
+                        <h3>Review (no new homework)</h3>
+                        <ul>
+                            <li>(Mon, Dec 2) Review</li>
+                            <li>(Wed, Dec 4) Review</li>
+                            <li>(Fri, Dec 6) Review</li>
+                            <li>MyMathLab Course Review is available.</li>
+                        </ul>
+                    </div>
+                </section>
+                <h3>Important Dates</h3>
+                <ul>
+                    <li>SUNDAY, Dec 8, REVIEW FOR FINAL, noon-1:00pm, place DS 206</li>
+                </ul>
+                <h3>FINAL EXAM DATES AND TIMES</h3>
+                <ul>
+                    <li>For 8am class, Mon, Dec 9, 9:10am-12:10pm.</li>
+                    <li>For 10:30am class, Fri, Dec 13, 9:10am-12:10pm.</li>
+                </ul>
+            </article>
+        </details>
+    </div>
+    <footer>
+        <p>Disclaimer: The content on any pages accessible from this page or in any pages associated with the directory "webpages.scu.edu/~dsmolarski/" reflects only the views of Dennis C. Smolarski and in no way represents the Society of Jesus, either globally, or in the Jesuit West Province, or at Santa Clara University Jesuit Community.<br>
+        This index page was last updated on 18 June 2024.</p>
+        <img src="assets/SCUlogo.png" alt="SCU Logo" class="footer-logo">
+    </footer>
+</body>
+
+</html>

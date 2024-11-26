@@ -1,0 +1,7 @@
+Feedback from Professor (last updated Nov 1)
+
+* Consider removing the sidebar and instead combining it with Week 10 of the accordion
+"People aren't really gonna pay attention to the final exam date until the very end so
+the amount of real estate the sidebar takes in the Figma wireframe isn't really justified." (Paraphrasing from his own words)
+
+The "Notice" section of Class Content should have the <section> tag.
