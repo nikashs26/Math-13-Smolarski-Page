@@ -494,7 +494,8 @@ details[open]>summary>.marker-container {
 
 /* compensation */
 details[open]>summary:hover>.marker-container {
-    transform: translateY(-0.1rem);
+    transform: translateY(-0.05rem);
+    /* not sure if i should keep this */
 }
 
 @media (prefers-reduced-motion: reduce) {
