@@ -39,11 +39,19 @@ function toggleExpandAllAccordions() {
 
 function closeAllAccordions() {
     for (i = 0; i < detailArray.length; i++) {
-        // summaryArray[i].style.transition = "none"; //seizure prevention in action
+        summaryArray[i].style.transition = "none"; //seizure prevention in action
         detailArray[i].open = false;
     }
     expandAllButton.style.borderImage = "url(icons/borders/Plus_Border_Expand3.png) 20 round";
     expandAllButton.innerHTML = 'EXPAND ALL';
+    setTimeout(() => {
+        // Code to be executed after 5 seconds
+        for (i = 0; i < detailArray.length; i++) {
+            summaryArray[i].style.transition = "0.3s";
+        }
+    }, 300);
+
+
     return;
 }
 function expandAllAccordions() {

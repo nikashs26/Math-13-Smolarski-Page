@@ -148,7 +148,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: 350;
     font-style: normal;
 
@@ -341,6 +340,14 @@ summary:hover {
         transition: .1s;
     }
 
+    summary {
+        transition: 0.3s
+    }
+
+    header nav ul li a {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
     .vert-line,
     .horiz-line {
         transition: .3s;
@@ -456,8 +463,6 @@ details summary h2 {
 
 }
 
-
-
 /* PLUS AND MINUS SYMBOLS!!! */
 .vert-line,
 .horiz-line {
@@ -465,13 +470,12 @@ details summary h2 {
     position: absolute;
     width: 1.6rem;
     height: 0.25rem;
-    background: #000;
+    background: #282828;
     margin-top: 0.7rem;
 }
 
 .vert-line {
     rotate: 90deg;
-    /* background: chartreuse; */
 }
 
 details[open]>summary>.marker-container>.vert-line {
