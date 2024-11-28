@@ -352,7 +352,7 @@ summary:hover {
 
     .checkbox-container input~.eye,
     .checkbox-container input~.eyeslash {
-        transition: 0.1s;
+        transition: 0.4s;
     }
 
     ul button {
@@ -392,6 +392,7 @@ article {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     box-shadow: inset 0 -0.25rem 2rem -15px black;
+    display: block;
 }
 
 .entire-accordion {
@@ -488,12 +489,12 @@ details>summary:hover>.marker-container {
 }
 
 details[open]>summary>.marker-container {
-    transform: translateX(0) !important;
+    transform: translateX(0);
 }
 
 /* compensation */
 details[open]>summary:hover>.marker-container {
-    /* transform: translateX(); */
+    transform: translateY(-0.1rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
