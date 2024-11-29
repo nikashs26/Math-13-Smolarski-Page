@@ -344,6 +344,11 @@ summary:hover {
         transition: 0.3s
     }
 
+    #inactive-toggler>summary {
+        transition: 0.1s;
+    }
+
+
     header nav ul li a {
         transition: background-color 0.3s ease, color 0.3s ease;
     }
@@ -357,9 +362,13 @@ summary:hover {
         transition: .3s;
     }
 
-    .checkbox-container input~.eye,
+    /* .checkbox-container input~.eye,
     .checkbox-container input~.eyeslash {
         transition: 0.4s;
+    } */
+
+    .eye {
+        transition: 1s;
     }
 
     ul button {
@@ -462,6 +471,45 @@ details summary h2 {
     user-select: none;
 
 }
+
+/* Inactive toggler */
+#inactive-toggler {
+    user-select: none;
+    /* border-top: solid 2px black;
+    border-bottom: solid 2px black; */
+
+    & summary {
+        /* background-color: chartreuse; */
+        padding: 0.5rem;
+
+        & .eye {
+            vertical-align: bottom;
+            margin-left: 0.3rem;
+        }
+
+        & h2 {
+            margin-left: 0;
+        }
+    }
+}
+
+#inactive-toggler:hover>summary {
+    /* border-color: #f13f43; */
+    box-shadow: 0 1rem 1rem 0.1rem darkgray;
+    background-color: #f13f43;
+}
+
+#inactive-toggler[open] {
+    & summary {
+        background-color: darkred;
+        opacity: 0.8;
+
+        & .eye {
+            content: url(../icons/icons/eyeslash.svg);
+        }
+    }
+}
+
 
 /* PLUS AND MINUS SYMBOLS!!! */
 .vert-line,

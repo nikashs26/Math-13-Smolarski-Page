@@ -1,7 +1,7 @@
-const detailArray = document.getElementsByTagName("details");
+const detailArray = document.getElementsByClassName("week-details");
 const summaryArray = document.getElementsByTagName("summary"); //This is for preventing seizures with the transitions.
 const expandAllButton = document.getElementById("expandall-toggler");
-const inactiveCheckbox = document.getElementById("prev-weeks");
+const inactiveAccordion = document.getElementById("inactive-toggler");
 let numTimesExpandToggleClicked = 0; //Even is EXPAND ALL, Odd is COLLAPSE ALL 
 
 const query = window.matchMedia(
@@ -77,7 +77,7 @@ const differenceInWeeks = msToWeeks(differenceInMs);
 const msPerWeek = 1000 * 60 * 60 * 24 * 7;
 
 function inactiveToggleHandler() {
-    if (inactiveCheckbox.checked) {
+    if (inactiveAccordion.open) {
         showInactiveWeeks();
     } else {
         hideInactiveWeeks();
