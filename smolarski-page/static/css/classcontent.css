@@ -86,7 +86,7 @@ header form button {
 /* Class Content specifically*/
 #main-heading {
     color: #b30738;
-    
+
     margin-top: 8rem;
     font-family: 'Inter', sans-serif;
     font-size: 30px;
@@ -113,19 +113,18 @@ header {
     z-index: 1;
 }
 
-#math13-header
-{
-    font-weight:500;
-    margin-top:10rem;
-    color:white;
+#math13-header {
+    font-weight: 500;
+    margin-top: 10rem;
+    color: white;
     font-size: 30px;
     display: flex;
     justify-content: center;
 
 }
-.last-updated
-{
-    margin-left:1.2rem;
+
+.last-updated {
+    margin-left: 1.2rem;
 }
 
 .nav-background {
@@ -149,7 +148,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: 350;
     font-style: normal;
 
@@ -208,13 +206,14 @@ header form button a:hover {
     z-index: -3;
 }
 
-.notice-title
-{
-    font-size:25px;
+.notice-title {
+    font-size: 25px;
 }
-body p{
+
+body p {
     font-size: 20px;
 }
+
 /* Hide default checkbox */
 label input[type="checkbox"] {
     display: none;
@@ -290,19 +289,20 @@ footer {
     position: relative;
     margin-top: auto;
     width: 100%;
-    height:8rem;
+    height: 8rem;
 }
 
 footer p {
-    margin:1rem;
+    margin: 1rem;
     max-width: 70%;
     margin-bottom: 0.5rem;
 }
 
 .footer-logo {
     width: 80px;
-    margin-right:.6rem;
+    margin-right: .6rem;
 }
+
 /* buttons */
 ul button {
     padding: 0.5rem;
@@ -340,14 +340,26 @@ summary:hover {
         transition: .1s;
     }
 
+    summary {
+        transition: 0.3s
+    }
+
+    header nav ul li a {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
     .vert-line,
     .horiz-line {
         transition: .3s;
     }
 
+    .marker-container {
+        transition: .3s;
+    }
+
     .checkbox-container input~.eye,
     .checkbox-container input~.eyeslash {
-        transition: 0.1s;
+        transition: 0.4s;
     }
 
     ul button {
@@ -387,6 +399,7 @@ article {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     box-shadow: inset 0 -0.25rem 2rem -15px black;
+    display: block;
 }
 
 .entire-accordion {
@@ -447,10 +460,8 @@ details summary h2 {
     display: inline;
     margin-left: 2.2rem;
     user-select: none;
-    
+
 }
-
-
 
 /* PLUS AND MINUS SYMBOLS!!! */
 .vert-line,
@@ -459,39 +470,36 @@ details summary h2 {
     position: absolute;
     width: 1.6rem;
     height: 0.25rem;
-    background: #000;
-    margin-top: 0.9rem;
+    background: #282828;
+    margin-top: 0.7rem;
 }
 
 .vert-line {
     rotate: 90deg;
-    /* background: chartreuse; */
 }
 
-details[open]>summary>.vert-line {
+details[open]>summary>.marker-container>.vert-line {
     rotate: 180deg;
     background: white;
 }
 
-details[open]>summary>.horiz-line {
+details[open]>summary>.marker-container>.horiz-line {
     rotate: 180deg;
     background: white;
 }
 
-details>summary:hover>.vert-line {
-    transform: translateX(0.25rem);
-}
-
-details[open]>summary:hover>.vert-line {
-    transform: translateX(0);
-}
-
-details>summary:hover>.horiz-line {
+details>summary:hover>.marker-container {
     transform: translateY(0.25rem);
 }
 
-details[open]>summary:hover>.horiz-line {
-    transform: translateY(0);
+details[open]>summary>.marker-container {
+    transform: translateX(0);
+}
+
+/* compensation */
+details[open]>summary:hover>.marker-container {
+    transform: translateY(-0.05rem);
+    /* not sure if i should keep this */
 }
 
 @media (prefers-reduced-motion: reduce) {
