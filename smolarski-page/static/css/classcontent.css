@@ -362,13 +362,10 @@ summary:hover {
         transition: .3s;
     }
 
-    /* .checkbox-container input~.eye,
-    .checkbox-container input~.eyeslash {
-        transition: 0.4s;
-    } */
-
-    .eye {
-        transition: 1s;
+    #inactive-toggler>summary>.eye {
+        transition: 10s;
+        animation-duration: 1s;
+        /* not working for some reason */
     }
 
     ul button {
