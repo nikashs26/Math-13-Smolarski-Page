@@ -497,13 +497,13 @@ details summary h2 {
 #inactive-toggler:hover>summary {
     /* border-color: #f13f43; */
 
-    box-shadow: 0 1rem 1rem 0.01rem black;
+    box-shadow: 0 1rem 1rem 0.05rem black;
     background-color: #f13f43;
 }
 
 #inactive-toggler[open] {
     & summary {
-        background-color: darkred;
+        background-color: #780000;
         opacity: 0.8;
 
         & .eye {
