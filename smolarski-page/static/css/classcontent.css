@@ -2,10 +2,15 @@
 
 body {
     font-family: 'Inter', sans-serif;
-
     font-weight: 200;
     margin: 0;
     padding: 0;
+}
+
+header {
+    overflow: hidden;
+    position: sticky;
+
 }
 
 #bigwhite {
@@ -281,7 +286,7 @@ body>section {
 footer {
     background-color: #a6192e;
     color: #fff;
-
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -341,11 +346,11 @@ summary:hover {
     }
 
     summary {
-        transition: 0.3s
+        transition: 0.25s
     }
 
-    #inactive-toggler>summary {
-        transition: 0.1s;
+    #inactive-toggler[open]>summary {
+        transition: 0.2s;
     }
 
 
@@ -472,8 +477,7 @@ details summary h2 {
 #inactive-toggler {
     user-select: none;
     border-top: solid 1px black;
-    /* border-top: solid 2px black;
-    border-bottom: solid 2px black; */
+    color: #777;
 
     & summary {
         /* background-color: chartreuse; */
@@ -498,7 +502,7 @@ details summary h2 {
 #inactive-toggler:hover>summary {
     /* border-color: #f13f43; */
 
-    box-shadow: 0 1rem 1rem 0.05rem black;
+    box-shadow: 0 0.5rem 1rem 0.05rem black;
     background-color: #f13f43;
 }
 

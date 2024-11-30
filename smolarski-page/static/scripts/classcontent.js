@@ -1,3 +1,7 @@
+// EDIT ME, MR. SMOLARSKI!
+let startDateOfQuarter = new Date("2024-09-23")
+let startDate_in_ms = startDateOfQuarter.getTime();
+
 const detailArray = document.getElementsByClassName("week-details");
 const summaryArray = document.getElementsByTagName("summary"); //This is for preventing seizures with the transitions.
 const expandAllButton = document.getElementById("expandall-toggler");
@@ -64,17 +68,16 @@ function expandAllAccordions() {
 }
 
 // SHOW/HIDE PREVIOUS WEEKS
-let currDate = new Date("2024-10-25"); //to the past to test it
+let currDate = new Date("2024-11-29"); //to the past to test it
 let currDate_in_ms = currDate.getTime();
-let startDateOfQuarter = new Date("2024-09-23")
-let startDate_in_ms = startDateOfQuarter.getTime();
 
 // Difference in milliseconds
 const differenceInMs = currDate - startDateOfQuarter;
 // Difference in days (aka days since start of quarter)
 const differenceInWeeks = msToWeeks(differenceInMs);
 
-const msPerWeek = 1000 * 60 * 60 * 24 * 7;
+const msPerDay = 1000 * 60 * 60 * 24;
+const msPerWeek = msPerDay * 7;
 
 function inactiveToggleHandler() {
     if (inactiveAccordion.open) {
@@ -84,11 +87,30 @@ function inactiveToggleHandler() {
     }
 }
 
+// DISPLAYING " [CURRENT]" ON THE CURRENT WEEK OF THE QUARTER
+const currDisplay = document.createElement("h4")
+currDisplay.textContent = " [CURRENT]"
+currDisplay.style.color = "red"
+currDisplay.style.display = "inline"
+
+const mondayWarning = document.createElement("h5")
+mondayWarning.textContent = " [DOUBLE-CHECK FOR MONDAY-DUE ASSIGNMENTS]"
+mondayWarning.style.color = "darkgray"
+mondayWarning.style.display = "inline"
+
+
+let weekHeaderArray = document.getElementsByClassName("week-header");
+let currWeekOfQuarter = Math.floor(msToWeeks(Math.abs(currDate_in_ms)) - msToWeeks(startDate_in_ms))
+weekHeaderArray[currWeekOfQuarter].append(currDisplay)
+weekHeaderArray[currWeekOfQuarter - 1].append(mondayWarning)
+
+console.log("The current week is", currWeekOfQuarter)
 
 function hideInactiveWeeks() {
     for (i = 0; i < detailArray.length; i++) {
         let targetWeek = i * msPerWeek + startDate_in_ms;
-        if (msToWeeks((currDate_in_ms - targetWeek)) > msToWeeks(2 * msPerWeek)) {
+        // If the difference is greater than 2 weeks + Monday, then hide.
+        if (msToWeeks((currDate_in_ms - targetWeek)) > msToWeeks(msPerWeek) + msToDays(msPerDay)) {
             detailArray[i].style.display = "none";
             console.log(msToWeeks(Math.abs(currDate_in_ms - targetWeek)), " is less than ", msToWeeks(2 * msPerWeek))
         } else {
@@ -111,4 +133,9 @@ function showInactiveWeeks() {
 function msToWeeks(totalMilliseconds) {
     let msPerWeek = 1000 * 60 * 60 * 24 * 7;
     return totalMilliseconds / msPerWeek;
+}
+
+function msToDays(totalMilliseconds) {
+    let msPerDay = 1000 * 60 * 60 * 24;
+    return totalMilliseconds / msPerDay
 }
