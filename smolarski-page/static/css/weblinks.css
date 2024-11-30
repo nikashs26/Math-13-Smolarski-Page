@@ -62,6 +62,11 @@ header nav ul li a {
     font-weight: bold;
 }
 
+header form
+{
+    margin-right: 1rem;
+}
+
 header form input[type="search"] {
     padding: 0.4rem;
     border: none;
