@@ -68,7 +68,7 @@ function expandAllAccordions() {
 }
 
 // SHOW/HIDE PREVIOUS WEEKS
-let currDate = new Date("2024-11-04"); //requires time-traveling to test, should be just new Date() by default
+let currDate = new Date("2024-10-22"); //requires time-traveling to test, should be just new Date() by default
 let currDate_in_ms = currDate.getTime();
 
 // Difference in milliseconds
@@ -100,7 +100,7 @@ mondayWarning.style.display = "inline"
 
 
 let weekHeaderArray = document.getElementsByClassName("week-header");
-let currWeekOfQuarter = Math.floor(msToWeeks(Math.abs(currDate_in_ms)) - msToWeeks(startDate_in_ms))
+let currWeekOfQuarter = Math.ceil(msToWeeks(Math.abs(currDate_in_ms)) - msToWeeks(startDate_in_ms))
 weekHeaderArray[currWeekOfQuarter].append(currDisplay)
 weekHeaderArray[currWeekOfQuarter - 1].append(mondayWarning)
 
@@ -110,7 +110,7 @@ function hideInactiveWeeks() {
     for (i = 0; i < detailArray.length; i++) {
         let targetWeek = i * msPerWeek + startDate_in_ms;
         // If the difference is greater than 2 weeks + Monday, then hide.
-        if (msToWeeks((currDate_in_ms - targetWeek)) > msToWeeks(msPerWeek) + msToDays(msPerDay)) {
+        if (msToWeeks((currDate_in_ms - targetWeek)) > msToWeeks(msPerWeek)) {
             detailArray[i].style.display = "none";
             console.log(msToWeeks(Math.abs(currDate_in_ms - targetWeek)), " is less than ", msToWeeks(2 * msPerWeek))
         } else {
