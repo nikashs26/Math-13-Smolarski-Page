@@ -296,6 +296,9 @@ body>section {
 
 }
 
+section p {
+    font-size: 19px;
+}
 
 footer {
     background-color: #a6192e;
