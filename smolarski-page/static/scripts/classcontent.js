@@ -2,6 +2,21 @@
 const startDateOfQuarter = new Date("2024-09-23")
 const startDate_in_ms = startDateOfQuarter.getTime();
 
+const lastUpdatedText = document.getElementById("last-updated");
+
+const lastModified = new Date(document.lastModified);
+// Format using toLocaleDateString
+const formattedDate1 = lastModified.toLocaleDateString();
+
+// Format using Intl.DateTimeFormat
+const formatter = new Intl.DateTimeFormat('en-US', {
+    year: 'numeric', month: 'long', day: 'numeric',
+    hour: 'numeric', minute: 'numeric', second: 'numeric'
+});
+const formattedDate2 = formatter.format(lastModified);;
+lastUpdatedText.append(formattedDate2);
+
+
 const detailArray = document.getElementsByClassName("week-details");
 const summaryArray = document.getElementsByTagName("summary"); //This is for preventing seizures with the transitions.
 const expandAllButton = document.getElementById("expandall-toggler");
@@ -137,7 +152,7 @@ function msToDays(totalMilliseconds) {
     let msPerDay = 1000 * 60 * 60 * 24;
     return totalMilliseconds / msPerDay
 }
-const chadModeActivated = Boolean(false);
+let chadModeActivated = Boolean(false);
 const smolarskiFace = document.getElementById("cool-math-teacher");
 function toggleGigaChad() {
     if (!chadModeActivated) {
