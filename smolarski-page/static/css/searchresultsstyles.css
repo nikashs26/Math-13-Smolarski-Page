@@ -1,4 +1,10 @@
-body, h1, p, ul, li, input, button {
+body,
+h1,
+p,
+ul,
+li,
+input,
+button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +55,6 @@ header button {
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 main {
@@ -91,7 +96,6 @@ main {
     font-size: 0.9rem;
     color: #f0a500;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .result-item a:hover {
@@ -115,16 +119,34 @@ footer {
     position: relative;
     margin-top: auto;
     width: 100%;
-    height:8rem;
+    height: 8rem;
     bottom: 0;
 }
 
 footer p {
-    margin:1rem;
+    margin: 1rem;
     max-width: 70%;
     margin-bottom: 0.5rem;
 }
+
 .footer-logo {
     width: 80px;
-    margin-right:.6rem;
+    margin-right: .6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    header button {
+        transition: background-color 0.3s ease;
+    }
+
+    .result-item a {
+        transition: color 0.3s ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+        transition: none;
+    }
 }

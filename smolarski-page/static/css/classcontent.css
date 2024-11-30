@@ -132,6 +132,17 @@ header {
     margin-left: 1.2rem;
 }
 
+#cool-math-teacher {
+    margin-left: 1rem;
+    vertical-align: bottom;
+}
+
+h4 {
+    display: inline;
+    vertical-align: center;
+    margin-bottom: 0.2rem;
+}
+
 .nav-background {
 
     position: absolute;
@@ -474,6 +485,7 @@ details summary h2 {
     user-select: none;
     border-top: solid 1px black;
     color: #777;
+    margin-top: 1rem;
 
     & summary {
         /* background-color: chartreuse; */

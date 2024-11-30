@@ -1,6 +1,6 @@
 // EDIT ME, MR. SMOLARSKI!
-let startDateOfQuarter = new Date("2024-09-23")
-let startDate_in_ms = startDateOfQuarter.getTime();
+const startDateOfQuarter = new Date("2024-09-23")
+const startDate_in_ms = startDateOfQuarter.getTime();
 
 const detailArray = document.getElementsByClassName("week-details");
 const summaryArray = document.getElementsByTagName("summary"); //This is for preventing seizures with the transitions.
@@ -54,8 +54,6 @@ function closeAllAccordions() {
             summaryArray[i].style.transition = "0.3s";
         }
     }, 300);
-
-
     return;
 }
 function expandAllAccordions() {
@@ -138,4 +136,14 @@ function msToWeeks(totalMilliseconds) {
 function msToDays(totalMilliseconds) {
     let msPerDay = 1000 * 60 * 60 * 24;
     return totalMilliseconds / msPerDay
+}
+const chadModeActivated = Boolean(false);
+const smolarskiFace = document.getElementById("cool-math-teacher");
+function toggleGigaChad() {
+    if (!chadModeActivated) {
+        smolarskiFace.src = "/icons/icons/smolarski-true-form.png"
+    } else {
+        smolarskiFace.src = "/icons/icons/smolarski-moji.png"
+    }
+    chadModeActivated = !chadModeActivated;
 }
