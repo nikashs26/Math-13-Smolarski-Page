@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homePageStyles.css">
     <title>HomePage</title>
+    <script defer src = "scripts/homePageScripts.js"></script>
+    <script defer src="scripts/search.js" defer></script>
+    <script src="scripts/highlight.js"></script>
 </head>
 <div id="bigwhite"></div>
 <body>
@@ -18,8 +21,8 @@
                 <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
             </ul>
         </nav>
-        <form role="search" aria-label="Search site">
-            <input type="search" name="q" placeholder="Search" aria-label="Search">
+        <form role="search" aria-label="Search site" onsubmit="performSearch(event)">
+            <input type="search" id= "search-input" name="q" placeholder="Search" aria-label="Search" required>
             <button type="submit">🔍</button>
         </form>
     </header>    
@@ -50,27 +53,32 @@
         <div id = "handout-links-and-images">
             <article> 
                 <img src="assets/syllabus.png" alt="Syllabus Statements" class="syllabus">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/SYL24f.pdf">SYLLABUS</p>
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/SYL24f.pdf" class="link" data-info= "Syllabus" data-img="assets/syllabus-popup.png">SYLLABUS</a></p>
             </article>
             <article>
                 <img src="assets/syllabusStatements.png" alt="Syllabus Statements" class="syllabus-statements">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/SCU_Syllabus_Statements_Extract_2023-2024.pdf">SYLLABUS STATEMENTS</a></p>
+
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/SCU_Syllabus_Statements_Extract_2023-2024.pdf" class="link" data-info= "Syllabus Statements" data-img="assets/syllabus-statements-popup.png">SYLLABUS STATEMENTS</a></p>
             </article>
             <article>
                 <img src="assets/handoutsList.png" alt="Handout List" class="handout-list">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/MT13handF24.pdf">HANDOUT LIST</p>
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/MT13handF24.pdf" class="link" data-info= "Handout List" data-img="assets/handout-list-popup.png">HANDOUT LIST</a></p>
+
             </article>
             <article>
                 <img src="assets/knowledgeAssumed.png" alt="Knowledge Assumed" class="knowledge-assumed">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma11/Math11-12-13-TrigFacts.pdf">KNOWLEDGE ASSUMED</a></p>
+
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/MT13handF24.pdf" class="link" data-info= "Knowleedge Assumed" data-img="assets/knowledge-assumed-popup.png">KNOWLEDGE ASSUMED</a></p>
             </article>
             <article>
                 <img src="assets/8amreg.png" alt="8 AM Registration Handout" class="eightam-reg">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski20407-8am-F24.pdf">MYMATHLAB-8:00AM CLASS</a></p>
+
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski20407-8am-F24.pdf" class="link" data-info= "MYMATHLAB-8:00AM CLASS" data-img="assets/eight-am-reg-popup.png">MYMATHLAB-8:00AM CLASS</a></p>
             </article>
             <article>
                 <img src = "assets/10amreg.png" alt="10 AM Registration Handout" class = "tenam-reg">
-                <p><a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski54070-1030-F24.pdf">MYMATHLAB-10:00AM CLASS</a></p>
+                <p> <a href="https://webpages.scu.edu/ftp/dsmolarski/ma13/Student_Registration_Handout_smolarski54070-1030-F24.pdf" class="link" data-info= "MYMATHLAB-10:00AM CLASS" data-img="assets/ten-am-reg-popup.png">MYMATHLAB-10:00AM CLASS</a></p>
+
             </article>
         </div>
     <section id = Class-Content-Section>

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis C. Smolarski, S.J.'s Index Page</title>
     <link rel="stylesheet" href="css/aboutProf.css"> <!-- Link to CSS file -->
-    <script src="./script.js" defer></script>
+    <script defer src="scripts/script.js" defer></script>
+    <script defer src="scripts/search.js" defer></script>
+    <script src="scripts/highlight.js"></script>
 </head>
 
 
@@ -23,8 +25,8 @@
                 <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
             </ul>
         </nav>
-        <form role="search" aria-label="Search site">
-            <input type="search" name="q" placeholder="Search" aria-label="Search">
+        <form role="search" aria-label="Search site" onsubmit="performSearch(event)">
+            <input type="search" id= "search-input" name="q" placeholder="Search" aria-label="Search" required>
             <button type="submit">🔍</button>
         </form>
     </header>     
@@ -45,10 +47,10 @@
 
     <!-- Quick Links Section -->
     <section class="quick-links">
-        <a href="https://webpages.scu.edu/ftp/dsmolarski/personal.html" class="button">Personal Information</a>
+        <a href="https://webpages.scu.edu/ftp/dsmolarski/personal.html" class="link" data-info= "Professor Smolarski Personal Information" data-img="assets/personalinfo.png">Personal Information</a>
             
         <div class="divider"></div>
-        <a href="https://webpages.scu.edu/ftp/dsmolarski/academic.html" class="button">Course Information</a>
+        <a href="https://webpages.scu.edu/ftp/dsmolarski/academic.html" class="link" data-info= "Professor Smolarski Course Information" data-img="assets/courseinfo.png"> Course Information</a>
     </section>
 
 

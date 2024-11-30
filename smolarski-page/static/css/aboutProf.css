@@ -184,8 +184,6 @@ header form button a:hover {
 }
 
 
-
-
 /* Hide default checkbox */
 label input[type="checkbox"] {
     display: none;
@@ -381,20 +379,6 @@ details[open]
     font-size: 22px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact-info{
 
 
@@ -465,7 +449,6 @@ footer p {
     line-height: 1.4;
     overflow: visible; 
 }
-
 
 .popup-info img {
     max-width: 100%;
