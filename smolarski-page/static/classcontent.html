@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/classcontent.css">
     <script defer src="scripts/classcontent.js"></script>
     <script defer src="scripts/datehandler.js"></script>
+    <script defer src="scripts/search.js" defer></script>
+    <script src="scripts/highlight.js"></script>
 </head>
 
 <div id="bigwhite"></div>
@@ -23,8 +25,8 @@
                 <li><a href="aboutProf.html">ABOUT PROFESSOR SMOLARSKI</a></li>
             </ul>
         </nav>
-        <form role="search" aria-label="Search site">
-            <input type="search" name="q" placeholder="Search" aria-label="Search">
+        <form role="search" aria-label="Search site" onsubmit="performSearch(event)">
+            <input type="search" id= "search-input" name="q" placeholder="Search" aria-label="Search" required>
             <button type="submit">🔍</button>
         </form>
     </header>
