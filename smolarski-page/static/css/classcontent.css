@@ -215,10 +215,6 @@ header form button a:hover {
     font-size: 25px;
 }
 
-body p {
-    font-size: 20px;
-}
-
 /* Hide default checkbox */
 label input[type="checkbox"] {
     display: none;
