@@ -1,0 +1,18 @@
+[
+    {
+        "url": "index.html",
+        "title": "Home Page"
+    },
+    {
+        "url": "classcontent.html",
+        "title": "Class Content"
+    },
+    {
+        "url": "weblinks.html",
+        "title": "Web Links"
+    },
+    {
+        "url": "aboutProf.html",
+        "title": "About Professor"
+    }
+]

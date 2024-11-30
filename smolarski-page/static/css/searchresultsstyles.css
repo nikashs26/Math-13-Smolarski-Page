@@ -1,0 +1,130 @@
+body, h1, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #a6192e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header input[type="search"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+header button {
+    background-color: #F8F8F8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+#results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.result-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item h2 {
+    font-size: 1.5rem;
+    color: #00457C;
+    margin-bottom: 5px;
+}
+
+.result-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.result-item a {
+    font-size: 0.9rem;
+    color: #f0a500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.result-item a:hover {
+    color: #d48806;
+}
+
+.no-results {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+footer {
+    background-color: #a6192e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height:8rem;
+    bottom: 0;
+}
+
+footer p {
+    margin:1rem;
+    max-width: 70%;
+    margin-bottom: 0.5rem;
+}
+.footer-logo {
+    width: 80px;
+    margin-right:.6rem;
+}
