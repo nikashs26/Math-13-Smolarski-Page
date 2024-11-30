@@ -3,18 +3,14 @@ const startDateOfQuarter = new Date("2024-09-23")
 const startDate_in_ms = startDateOfQuarter.getTime();
 
 const lastUpdatedText = document.getElementById("last-updated");
-
 const lastModified = new Date(document.lastModified);
-// Format using toLocaleDateString
-const formattedDate1 = lastModified.toLocaleDateString();
-
 // Format using Intl.DateTimeFormat
 const formatter = new Intl.DateTimeFormat('en-US', {
     year: 'numeric', month: 'long', day: 'numeric',
     hour: 'numeric', minute: 'numeric', second: 'numeric'
 });
-const formattedDate2 = formatter.format(lastModified);;
-lastUpdatedText.append(formattedDate2);
+const formattedDate = formatter.format(lastModified);;
+lastUpdatedText.append(formattedDate);
 
 
 const detailArray = document.getElementsByClassName("week-details");
