@@ -292,9 +292,11 @@ body>section {
     padding: 1rem;
     margin-top: 2rem;
     position: relative;
-
 }
 
+section p {
+    font-size: 19px;
+}
 
 footer {
     background-color: #a6192e;
