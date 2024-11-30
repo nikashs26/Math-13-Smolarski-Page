@@ -68,7 +68,7 @@ function expandAllAccordions() {
 }
 
 // SHOW/HIDE PREVIOUS WEEKS
-let currDate = new Date("2024-11-29"); //to the past to test it
+let currDate = new Date("2024-11-04"); //requires time-traveling to test, should be just new Date() by default
 let currDate_in_ms = currDate.getTime();
 
 // Difference in milliseconds
