@@ -6,10 +6,9 @@ const lastUpdatedText = document.getElementById("last-updated");
 const lastModified = new Date(document.lastModified);
 // Format using Intl.DateTimeFormat
 const formatter = new Intl.DateTimeFormat('en-US', {
-    year: 'numeric', month: 'long', day: 'numeric',
-    hour: 'numeric', minute: 'numeric', second: 'numeric'
+    year: 'numeric', month: 'long', day: 'numeric'
 });
-const formattedDate = formatter.format(lastModified);;
+const formattedDate = formatter.format(lastModified);
 lastUpdatedText.append(formattedDate);
 
 
