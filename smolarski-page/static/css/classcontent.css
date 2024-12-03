@@ -143,15 +143,13 @@ header {
     vertical-align: bottom;
 }
 
-h4 {
+#gigachad-toggle>label>h4 {
     display: inline;
     vertical-align: super;
     margin-bottom: 0.2rem;
-
 }
 
 .nav-background {
-
     position: absolute;
     top: 0;
     min-height: 20rem;
