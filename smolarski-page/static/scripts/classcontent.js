@@ -147,13 +147,3 @@ function msToDays(totalMilliseconds) {
     let msPerDay = 1000 * 60 * 60 * 24;
     return totalMilliseconds / msPerDay
 }
-let chadModeActivated = Boolean(false);
-const smolarskiFace = document.getElementById("cool-math-teacher");
-function toggleGigaChad() {
-    if (!chadModeActivated) {
-        smolarskiFace.src = "/icons/icons/smolarski-true-form.png"
-    } else {
-        smolarskiFace.src = "/icons/icons/smolarski-moji.png"
-    }
-    chadModeActivated = !chadModeActivated;
-}

@@ -145,8 +145,9 @@ header {
 
 h4 {
     display: inline;
-    vertical-align: center;
+    vertical-align: super;
     margin-bottom: 0.2rem;
+
 }
 
 .nav-background {
@@ -233,55 +234,44 @@ header form button a:hover {
 }
 
 /* Hide default checkbox */
-label input[type="checkbox"] {
+#chad-toggler {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#gigachad-toggle {
+    padding-top: 1rem;
+    margin-left: 0.5rem;
+    user-select: none;
+}
+
+input[type="checkbox"] {
     display: none;
 }
 
-.checkbox-container input~.eye,
-.checkbox-container input~.eyeslash {
-    position: absolute;
-    cursor: pointer;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.2rem;
-    padding-right: 9.5rem;
-    border: solid black 1px;
-}
-
-
-.checkbox-container {
-    padding-right: 2.4rem;
-    padding-top: 0.3rem;
-    padding-bottom: .85rem;
-    vertical-align: sub;
-}
-
-.checkbox-container:hover {
-    background-color: #e7e7e7;
-}
-
-.checkbox-container label {
-    margin-left: 2.5rem;
+#gigachad-toggle label {
     vertical-align: middle;
-    /* position: relative; */
+    position: relative;
 }
 
-/* Unchecked behavior (user cannot see previous weeks) */
-.checkbox-container input~.eyeslash {
+/* Unchecked behavior */
+#gigachad-toggle input~#smolarski-neutral {
     opacity: 1;
 }
 
-.checkbox-container input~.eye {
-    opacity: 0;
+#gigachad-toggle input~#gigachad-mode-activated {
+    display: none;
 }
 
-/* Checked behavior (user can see previous weeks) */
-.checkbox-container input:checked~.eyeslash {
-    opacity: 0;
+/* Checked behavior */
+#gigachad-toggle input:checked~#smolarski-neutral {
+    display: none;
 }
 
-.checkbox-container input:checked~.eye {
-
+#gigachad-toggle input:checked~#gigachad-mode-activated {
     opacity: 1;
     display: unset;
 }
@@ -292,7 +282,7 @@ body>section {
     padding: 1rem;
     margin-top: 2rem;
     position: relative;
-    font-size:18px;
+    font-size: 18px;
 
 }
 
