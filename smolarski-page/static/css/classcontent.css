@@ -241,9 +241,9 @@ header form button a:hover {
 }
 
 #gigachad-toggle {
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     margin-left: 0.5rem;
-    user-select: none;
+
 }
 
 input[type="checkbox"] {
@@ -258,10 +258,12 @@ input[type="checkbox"] {
 /* Unchecked behavior */
 #gigachad-toggle input~#smolarski-neutral {
     opacity: 1;
+    user-select: none;
 }
 
 #gigachad-toggle input~#gigachad-mode-activated {
     display: none;
+    user-select: none;
 }
 
 /* Checked behavior */

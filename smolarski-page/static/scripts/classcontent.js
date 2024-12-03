@@ -57,7 +57,7 @@ function closeAllAccordions() {
         detailArray[i].open = false;
     }
     expandAllButton.style.borderImage = "url(icons/borders/Plus_Border_Expand3.png) 20 round";
-    expandAllButton.innerHTML = 'EXPAND ALL';
+    expandAllButton.textContent = 'EXPAND ALL';
     setTimeout(() => {
         // Code to be executed after 5 seconds
         for (i = 0; i < detailArray.length; i++) {
@@ -71,7 +71,7 @@ function expandAllAccordions() {
         detailArray[i].open = true;
     }
     expandAllButton.style.borderImage = "url(icons/borders/Minus_Border_Collapse3.png) 20 round";
-    expandAllButton.innerHTML = 'COLLAPSE ALL';
+    expandAllButton.textContent = 'COLLAPSE ALL';
     return;
 }
 
